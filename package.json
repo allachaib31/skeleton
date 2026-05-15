@@ -1,0 +1,26 @@
+{
+  "name": "skeleton",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "frontend:typecheck": "npm --prefix frontend run typecheck",
+    "frontend:test": "npm --prefix frontend test",
+    "frontend:e2e": "npm --prefix frontend run e2e",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:audit": "npm --prefix frontend audit --audit-level=moderate",
+    "backend:typecheck": "npm --prefix backend run typecheck",
+    "backend:test": "npm --prefix backend test",
+    "backend:build": "npm --prefix backend run build",
+    "backend:audit": "npm --prefix backend audit --audit-level=moderate",
+    "backend:openapi": "npm --prefix backend run openapi:export",
+    "frontend:contract": "npm --prefix frontend run contract:generate",
+    "contract": "npm run backend:openapi && npm run frontend:contract",
+    "ci": "npm run validate",
+    "typecheck": "npm run frontend:typecheck && npm run backend:typecheck",
+    "test": "npm run frontend:test && npm run backend:test",
+    "e2e": "npm run frontend:e2e",
+    "build": "npm run frontend:build && npm run backend:build",
+    "audit": "npm run frontend:audit && npm run backend:audit",
+    "validate": "npm run contract && npm run typecheck && npm run test && npm run build && npm run audit"
+  }
+}

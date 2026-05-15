@@ -1,0 +1,189 @@
+{
+  "common": {
+    "operation_successful": "تمت العملية بنجاح",
+    "operation_failed": "فشلت العملية",
+    "api_healthy": "واجهة البرمجة تعمل بشكل سليم",
+    "notification": "إشعار"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalid_email": "عنوان بريد إلكتروني غير صالح",
+    "failed": "فشل التحقق من البيانات"
+  },
+  "auth": {
+    "login_success": "تم تسجيل الدخول بنجاح",
+    "register_success": "تم التسجيل بنجاح",
+    "logout_success": "تم تسجيل الخروج بنجاح",
+    "token_refreshed": "تم تحديث الرمز بنجاح",
+    "email_verified": "تم التحقق من البريد الإلكتروني بنجاح",
+    "verification_email_queued": "تمت إضافة رسالة التحقق إلى قائمة الإرسال",
+    "password_reset_email_sent": "إذا كان هذا البريد موجودا، فقد تم إرسال رابط إعادة التعيين",
+    "password_reset_success": "تمت إعادة تعيين كلمة المرور بنجاح",
+    "password_changed_success": "تم تغيير كلمة المرور بنجاح",
+    "invalid_credentials": "بيانات الاعتماد غير صالحة",
+    "email_taken": "البريد الإلكتروني مستخدم بالفعل",
+    "email_not_verified": "لم يتم التحقق من البريد الإلكتروني",
+    "default_role_missing": "الدور الافتراضي غير موجود في النظام",
+    "account_status": "حالة الحساب هي {{status}}",
+    "account_banned": "الحساب محظور",
+    "account_inactive": "الحساب غير نشط",
+    "account_locked_try_later": "الحساب مقفل مؤقتا. حاول مرة أخرى لاحقا.",
+    "invalid_or_expired_refresh_token": "رمز التحديث غير صالح أو منتهي الصلاحية",
+    "session_invalid_or_expired": "الجلسة غير صالحة أو منتهية الصلاحية",
+    "user_unavailable": "المستخدم غير متاح",
+    "token_invalid_or_expired": "الرمز غير صالح أو منتهي الصلاحية",
+    "forgot_password_rate_limited": "طلبات كثيرة جدا. يرجى الانتظار 5 دقائق.",
+    "refresh_token_missing": "رمز التحديث مفقود",
+    "current_password_incorrect": "كلمة المرور الحالية غير صحيحة"
+  },
+  "users": {
+    "profile_retrieved": "تم جلب الملف الشخصي بنجاح",
+    "profile_updated": "تم تحديث الملف الشخصي بنجاح",
+    "account_deleted": "تم حذف الحساب بنجاح",
+    "avatar_updated": "تم تحديث الصورة الشخصية بنجاح",
+    "password_changed": "تم تغيير كلمة المرور بنجاح",
+    "sessions_retrieved": "تم جلب الجلسات بنجاح",
+    "session_revoked": "تم إلغاء الجلسة بنجاح",
+    "user_not_found": "المستخدم غير موجود",
+    "incorrect_password": "كلمة المرور غير صحيحة",
+    "session_not_found": "الجلسة غير موجودة أو غير نشطة بالفعل",
+    "no_file_uploaded": "لم يتم رفع أي ملف"
+  },
+  "admin": {
+    "user_status_updated": "تم تحديث حالة المستخدم",
+    "user_role_updated": "تم تحديث دور المستخدم",
+    "user_deleted": "تم حذف المستخدم",
+    "session_revoked": "تم إلغاء الجلسة",
+    "upload_deleted": "تم حذف الملف المرفوع",
+    "user_not_found": "المستخدم غير موجود",
+    "invalid_status": "حالة غير صالحة",
+    "role_not_found": "الدور غير موجود",
+    "cannot_assign_super_admin": "لا يمكن تعيين دور SUPER_ADMIN من خلال هذا المسار",
+    "cannot_delete_self": "لا يمكن حذف حسابك من خلال مسار الإدارة",
+    "cannot_delete_super_admin": "لا يمكن حذف SUPER_ADMIN",
+    "session_not_found": "الجلسة غير موجودة",
+    "upload_not_found": "الملف المرفوع غير موجود"
+  },
+  "roles": {
+    "retrieved": "تم جلب الأدوار بنجاح",
+    "created": "تم إنشاء الدور بنجاح",
+    "updated": "تم تحديث الدور بنجاح",
+    "deleted": "تم حذف الدور بنجاح",
+    "name_exists": "اسم الدور موجود بالفعل",
+    "invalid_permissions": "معرف واحد أو أكثر من معرفات الصلاحيات غير صالح",
+    "not_found": "الدور غير موجود",
+    "cannot_edit_system": "لا يمكن تعديل دور نظامي",
+    "cannot_delete_system": "لا يمكن حذف دور نظامي",
+    "cannot_delete_assigned": "لا يمكن حذف الدور: هو معين حاليا لمستخدمين"
+  },
+  "permissions": {
+    "retrieved": "تم جلب الصلاحيات بنجاح",
+    "user_not_authenticated": "المستخدم غير مصادق عليه",
+    "role_forbidden": "ليست لديك صلاحية تنفيذ هذا الإجراء",
+    "permission_forbidden": "ليست لديك الصلاحية المطلوبة"
+  },
+  "notifications": {
+    "marked_read": "تم تعليم الإشعار كمقروء",
+    "all_marked_read": "تم تعليم جميع الإشعارات كمقروءة",
+    "deleted": "تم حذف الإشعار"
+  },
+  "uploads": {
+    "avatar_uploaded": "تم رفع الصورة الشخصية بنجاح",
+    "deleted": "تم حذف الملف المرفوع بنجاح",
+    "no_file": "لم يتم تقديم أي ملف",
+    "not_found": "الملف المرفوع غير موجود",
+    "invalid_format": "تنسيق الملف غير صالح. يسمح فقط بملفات JPG و PNG و WEBP.",
+    "size_exceeded": "حجم الملف يتجاوز حد 5 ميغابايت.",
+    "invalid_content": "محتوى الملف لا يطابق تنسيق صورة مسموحا.",
+    "malware_detected": "فشل الملف المرفوع في فحص البرمجيات الخبيثة.",
+    "unsupported_format": "تنسيق الملف غير مدعوم. {{description}}"
+  },
+  "i18n": {
+    "file_required": "ملف اللغة بصيغة JSON مطلوب",
+    "uploaded": "تم رفع اللغة بنجاح",
+    "not_found": "اللغة غير موجودة",
+    "invalid_code": "يجب أن يستخدم رمز اللغة تنسيق ISO مثل \"es\" أو \"pt-br\"",
+    "name_required": "اسم اللغة مطلوب",
+    "invalid_direction": "يجب أن يكون الاتجاه \"ltr\" أو \"rtl\"",
+    "invalid_json": "يجب أن يكون ملف اللغة المرفوع JSON صالحا",
+    "missing_keys": "ملف اللغة يفتقد مفاتيح مطلوبة: {{keys}}"
+  },
+  "errors": {
+    "server_error": "خطأ داخلي في الخادم",
+    "not_found": "المورد غير موجود",
+    "not_found_path": "لا يمكن العثور على {{path}} على هذا الخادم!",
+    "unauthorized": "وصول غير مصرح به",
+    "forbidden": "وصول محظور",
+    "invalid_token": "الرمز غير صالح. يرجى تسجيل الدخول مرة أخرى!",
+    "token_expired": "انتهت صلاحية الرمز. يرجى تسجيل الدخول مرة أخرى.",
+    "duplicate_field": "{{value}} موجود بالفعل. يرجى استخدام قيمة أخرى!",
+    "invalid_input": "بيانات الإدخال غير صالحة. {{details}}",
+    "invalid_id": "المورد غير موجود. غير صالح: {{path}}",
+    "something_wrong": "حدث خطأ ما!",
+    "cors_not_allowed": "غير مسموح بواسطة CORS",
+    "no_token": "لم يتم تقديم رمز",
+    "token_blacklisted": "الرمز موجود في القائمة السوداء",
+    "request_origin_not_allowed": "مصدر الطلب غير مسموح"
+  },
+  "rateLimit": {
+    "global": "طلبات كثيرة جدا من عنوان IP هذا، يرجى المحاولة مرة أخرى بعد 15 دقيقة",
+    "auth": "محاولات مصادقة كثيرة جدا، يرجى المحاولة مرة أخرى بعد ساعة",
+    "upload": "تم رفع ملفات كثيرة جدا من عنوان IP هذا، يرجى المحاولة مرة أخرى بعد ساعة"
+  },
+  "mail": {
+    "subjects": {
+      "welcome": "مرحبا بك في منصتنا!",
+      "verify_email": "تحقق من عنوان بريدك الإلكتروني",
+      "reset_password": "إعادة تعيين كلمة المرور",
+      "password_changed": "تم تغيير كلمة المرور",
+      "login_new_device": "تم اكتشاف تسجيل دخول جديد",
+      "account_locked": "تم قفل الحساب",
+      "security_alert": "تنبيه أمني",
+      "admin_invitation": "دعوة مسؤول",
+      "notification": "إشعار"
+    },
+    "greeting": "مرحبا {{name}}،",
+    "welcome": {
+      "title": "مرحبا {{name}}!",
+      "body": "شكرا لتسجيلك. يرجى التحقق من بريدك الإلكتروني.",
+      "button": "تحقق من البريد الإلكتروني"
+    },
+    "verifyEmail": {
+      "body": "يرجى النقر على الرابط أدناه للتحقق من بريدك الإلكتروني. تنتهي صلاحية هذا الرابط خلال 24 ساعة.",
+      "button": "تحقق من البريد الإلكتروني"
+    },
+    "resetPassword": {
+      "body": "طلبت إعادة تعيين كلمة المرور. انقر على الرابط أدناه. تنتهي صلاحيته خلال ساعة واحدة.",
+      "button": "إعادة تعيين كلمة المرور"
+    },
+    "passwordChanged": {
+      "body": "تم تغيير كلمة المرور الخاصة بك مؤخرا.",
+      "time": "الوقت: {{time}}",
+      "ip": "عنوان IP: {{ip}}",
+      "warning": "إذا لم تقم بهذا التغيير، يرجى الاتصال بالدعم فورا.",
+      "unknown": "غير معروف"
+    },
+    "loginNewDevice": {
+      "title": "تم اكتشاف تسجيل دخول جديد",
+      "body": "تم اكتشاف تسجيل دخول جديد إلى حسابك.",
+      "device": "الجهاز: {{device}}",
+      "ip": "عنوان IP: {{ip}}",
+      "time": "الوقت: {{time}}"
+    },
+    "accountLocked": {
+      "title": "تم قفل الحساب",
+      "body": "تم قفل حسابك بسبب محاولات تسجيل دخول فاشلة كثيرة.",
+      "unlock": "وقت إلغاء القفل: {{time}}"
+    },
+    "securityAlert": {
+      "title": "تنبيه أمني",
+      "admin": "المسؤول: {{name}}",
+      "details": "التفاصيل: {{details}}"
+    },
+    "adminInvitation": {
+      "title": "دعوة مسؤول",
+      "body": "تمت دعوتك للانضمام إلى لوحة الإدارة.",
+      "button": "قبول الدعوة"
+    }
+  }
+}

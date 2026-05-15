@@ -1,0 +1,189 @@
+{
+  "common": {
+    "operation_successful": "Operation successful",
+    "operation_failed": "Operation failed",
+    "api_healthy": "API is running smoothly",
+    "notification": "Notification"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalid_email": "Invalid email address",
+    "failed": "Validation failed"
+  },
+  "auth": {
+    "login_success": "Logged in successfully",
+    "register_success": "Registered successfully",
+    "logout_success": "Logged out successfully",
+    "token_refreshed": "Token refreshed successfully",
+    "email_verified": "Email verified successfully",
+    "verification_email_queued": "Verification email queued",
+    "password_reset_email_sent": "If that email exists, a reset link has been sent",
+    "password_reset_success": "Password has been reset successfully",
+    "password_changed_success": "Password changed successfully",
+    "invalid_credentials": "Invalid credentials",
+    "email_taken": "Email is already taken",
+    "email_not_verified": "Email is not verified",
+    "default_role_missing": "Default role not found in system",
+    "account_status": "Account is {{status}}",
+    "account_banned": "Account is banned",
+    "account_inactive": "Account is inactive",
+    "account_locked_try_later": "Account is temporarily locked. Try again later.",
+    "invalid_or_expired_refresh_token": "Invalid or expired refresh token",
+    "session_invalid_or_expired": "Session is invalid or expired",
+    "user_unavailable": "User is unavailable",
+    "token_invalid_or_expired": "Token is invalid or has expired",
+    "forgot_password_rate_limited": "Too many requests. Please wait 5 minutes.",
+    "refresh_token_missing": "Refresh token missing",
+    "current_password_incorrect": "Current password is incorrect"
+  },
+  "users": {
+    "profile_retrieved": "Profile retrieved successfully",
+    "profile_updated": "Profile updated successfully",
+    "account_deleted": "Account deleted successfully",
+    "avatar_updated": "Avatar updated successfully",
+    "password_changed": "Password changed successfully",
+    "sessions_retrieved": "Sessions retrieved successfully",
+    "session_revoked": "Session revoked successfully",
+    "user_not_found": "User not found",
+    "incorrect_password": "Incorrect password",
+    "session_not_found": "Session not found or already inactive",
+    "no_file_uploaded": "No file uploaded"
+  },
+  "admin": {
+    "user_status_updated": "User status updated",
+    "user_role_updated": "User role updated",
+    "user_deleted": "User deleted",
+    "session_revoked": "Session revoked",
+    "upload_deleted": "Upload deleted",
+    "user_not_found": "User not found",
+    "invalid_status": "Invalid status",
+    "role_not_found": "Role not found",
+    "cannot_assign_super_admin": "Cannot assign SUPER_ADMIN role via this endpoint",
+    "cannot_delete_self": "Cannot delete your own account via admin endpoint",
+    "cannot_delete_super_admin": "Cannot delete a SUPER_ADMIN",
+    "session_not_found": "Session not found",
+    "upload_not_found": "Upload not found"
+  },
+  "roles": {
+    "retrieved": "Roles retrieved successfully",
+    "created": "Role created successfully",
+    "updated": "Role updated successfully",
+    "deleted": "Role deleted successfully",
+    "name_exists": "Role name already exists",
+    "invalid_permissions": "One or more permission IDs are invalid",
+    "not_found": "Role not found",
+    "cannot_edit_system": "Cannot edit a system role",
+    "cannot_delete_system": "Cannot delete a system role",
+    "cannot_delete_assigned": "Cannot delete role: it is currently assigned to users"
+  },
+  "permissions": {
+    "retrieved": "Permissions retrieved successfully",
+    "user_not_authenticated": "User not authenticated",
+    "role_forbidden": "You do not have permission to perform this action",
+    "permission_forbidden": "You do not have the required permission"
+  },
+  "notifications": {
+    "marked_read": "Notification marked as read",
+    "all_marked_read": "All notifications marked as read",
+    "deleted": "Notification deleted"
+  },
+  "uploads": {
+    "avatar_uploaded": "Avatar uploaded successfully",
+    "deleted": "Upload deleted successfully",
+    "no_file": "No file provided",
+    "not_found": "Upload not found",
+    "invalid_format": "Invalid file format. Only JPG, PNG and WEBP are allowed.",
+    "size_exceeded": "File size exceeds 5MB limit.",
+    "invalid_content": "File content does not match an allowed image format.",
+    "malware_detected": "Uploaded file failed malware scanning.",
+    "unsupported_format": "Unsupported file format. {{description}}"
+  },
+  "i18n": {
+    "file_required": "Language JSON file is required",
+    "uploaded": "Language uploaded successfully",
+    "not_found": "Language not found",
+    "invalid_code": "Language code must use ISO format like \"es\" or \"pt-br\"",
+    "name_required": "Language name is required",
+    "invalid_direction": "Direction must be \"ltr\" or \"rtl\"",
+    "invalid_json": "Uploaded language file must be valid JSON",
+    "missing_keys": "Language file is missing required keys: {{keys}}"
+  },
+  "errors": {
+    "server_error": "Internal server error",
+    "not_found": "Resource not found",
+    "not_found_path": "Can't find {{path}} on this server!",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Forbidden access",
+    "invalid_token": "Invalid token. Please log in again!",
+    "token_expired": "Your token has expired! Please log in again.",
+    "duplicate_field": "{{value}} already exists. Please use another value!",
+    "invalid_input": "Invalid input data. {{details}}",
+    "invalid_id": "Resource not found. Invalid: {{path}}",
+    "something_wrong": "Something went very wrong!",
+    "cors_not_allowed": "Not allowed by CORS",
+    "no_token": "No token provided",
+    "token_blacklisted": "Token is blacklisted",
+    "request_origin_not_allowed": "Request origin is not allowed"
+  },
+  "rateLimit": {
+    "global": "Too many requests from this IP, please try again after 15 minutes",
+    "auth": "Too many authentication attempts, please try again after an hour",
+    "upload": "Too many files uploaded from this IP, please try again after an hour"
+  },
+  "mail": {
+    "subjects": {
+      "welcome": "Welcome to our platform!",
+      "verify_email": "Verify your email address",
+      "reset_password": "Reset your password",
+      "password_changed": "Password changed",
+      "login_new_device": "New login detected",
+      "account_locked": "Account locked",
+      "security_alert": "Security alert",
+      "admin_invitation": "Admin invitation",
+      "notification": "Notification"
+    },
+    "greeting": "Hello {{name}},",
+    "welcome": {
+      "title": "Welcome {{name}}!",
+      "body": "Thank you for registering. Please verify your email.",
+      "button": "Verify Email"
+    },
+    "verifyEmail": {
+      "body": "Please click the link below to verify your email. This link expires in 24 hours.",
+      "button": "Verify Email"
+    },
+    "resetPassword": {
+      "body": "You requested a password reset. Click the link below. It expires in 1 hour.",
+      "button": "Reset Password"
+    },
+    "passwordChanged": {
+      "body": "Your password was recently changed.",
+      "time": "Time: {{time}}",
+      "ip": "IP: {{ip}}",
+      "warning": "If you did not make this change, please contact support immediately.",
+      "unknown": "Unknown"
+    },
+    "loginNewDevice": {
+      "title": "New login detected",
+      "body": "A new login was detected on your account.",
+      "device": "Device: {{device}}",
+      "ip": "IP: {{ip}}",
+      "time": "Time: {{time}}"
+    },
+    "accountLocked": {
+      "title": "Account locked",
+      "body": "Your account was locked due to too many failed login attempts.",
+      "unlock": "Unlock time: {{time}}"
+    },
+    "securityAlert": {
+      "title": "Security alert",
+      "admin": "Admin: {{name}}",
+      "details": "Details: {{details}}"
+    },
+    "adminInvitation": {
+      "title": "Admin invitation",
+      "body": "You have been invited to join the admin panel.",
+      "button": "Accept Invitation"
+    }
+  }
+}

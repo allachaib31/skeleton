@@ -1,0 +1,189 @@
+{
+  "common": {
+    "operation_successful": "Opération réussie",
+    "operation_failed": "Échec de l'opération",
+    "api_healthy": "L'API fonctionne correctement",
+    "notification": "Notification"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "invalid_email": "Adresse e-mail invalide",
+    "failed": "Échec de la validation"
+  },
+  "auth": {
+    "login_success": "Connexion réussie",
+    "register_success": "Inscription réussie",
+    "logout_success": "Déconnexion réussie",
+    "token_refreshed": "Jeton actualisé avec succès",
+    "email_verified": "E-mail vérifié avec succès",
+    "verification_email_queued": "E-mail de vérification mis en file d'attente",
+    "password_reset_email_sent": "Si cet e-mail existe, un lien de réinitialisation a été envoyé",
+    "password_reset_success": "Le mot de passe a été réinitialisé avec succès",
+    "password_changed_success": "Mot de passe modifié avec succès",
+    "invalid_credentials": "Identifiants invalides",
+    "email_taken": "Cet e-mail est déjà utilisé",
+    "email_not_verified": "E-mail non vérifié",
+    "default_role_missing": "Le rôle par défaut est introuvable dans le système",
+    "account_status": "Le compte est {{status}}",
+    "account_banned": "Le compte est banni",
+    "account_inactive": "Le compte est inactif",
+    "account_locked_try_later": "Le compte est temporairement verrouillé. Réessayez plus tard.",
+    "invalid_or_expired_refresh_token": "Jeton d'actualisation invalide ou expiré",
+    "session_invalid_or_expired": "La session est invalide ou expirée",
+    "user_unavailable": "L'utilisateur est indisponible",
+    "token_invalid_or_expired": "Le jeton est invalide ou a expiré",
+    "forgot_password_rate_limited": "Trop de demandes. Veuillez attendre 5 minutes.",
+    "refresh_token_missing": "Jeton d'actualisation manquant",
+    "current_password_incorrect": "Le mot de passe actuel est incorrect"
+  },
+  "users": {
+    "profile_retrieved": "Profil récupéré avec succès",
+    "profile_updated": "Profil mis à jour avec succès",
+    "account_deleted": "Compte supprimé avec succès",
+    "avatar_updated": "Avatar mis à jour avec succès",
+    "password_changed": "Mot de passe modifié avec succès",
+    "sessions_retrieved": "Sessions récupérées avec succès",
+    "session_revoked": "Session révoquée avec succès",
+    "user_not_found": "Utilisateur introuvable",
+    "incorrect_password": "Mot de passe incorrect",
+    "session_not_found": "Session introuvable ou déjà inactive",
+    "no_file_uploaded": "Aucun fichier téléversé"
+  },
+  "admin": {
+    "user_status_updated": "Statut utilisateur mis à jour",
+    "user_role_updated": "Rôle utilisateur mis à jour",
+    "user_deleted": "Utilisateur supprimé",
+    "session_revoked": "Session révoquée",
+    "upload_deleted": "Téléversement supprimé",
+    "user_not_found": "Utilisateur introuvable",
+    "invalid_status": "Statut invalide",
+    "role_not_found": "Rôle introuvable",
+    "cannot_assign_super_admin": "Impossible d'attribuer le rôle SUPER_ADMIN via cet endpoint",
+    "cannot_delete_self": "Impossible de supprimer votre propre compte via l'endpoint admin",
+    "cannot_delete_super_admin": "Impossible de supprimer un SUPER_ADMIN",
+    "session_not_found": "Session introuvable",
+    "upload_not_found": "Téléversement introuvable"
+  },
+  "roles": {
+    "retrieved": "Rôles récupérés avec succès",
+    "created": "Rôle créé avec succès",
+    "updated": "Rôle mis à jour avec succès",
+    "deleted": "Rôle supprimé avec succès",
+    "name_exists": "Le nom du rôle existe déjà",
+    "invalid_permissions": "Un ou plusieurs identifiants de permission sont invalides",
+    "not_found": "Rôle introuvable",
+    "cannot_edit_system": "Impossible de modifier un rôle système",
+    "cannot_delete_system": "Impossible de supprimer un rôle système",
+    "cannot_delete_assigned": "Impossible de supprimer le rôle : il est actuellement attribué à des utilisateurs"
+  },
+  "permissions": {
+    "retrieved": "Permissions récupérées avec succès",
+    "user_not_authenticated": "Utilisateur non authentifié",
+    "role_forbidden": "Vous n'avez pas la permission d'effectuer cette action",
+    "permission_forbidden": "Vous n'avez pas la permission requise"
+  },
+  "notifications": {
+    "marked_read": "Notification marquée comme lue",
+    "all_marked_read": "Toutes les notifications ont été marquées comme lues",
+    "deleted": "Notification supprimée"
+  },
+  "uploads": {
+    "avatar_uploaded": "Avatar téléversé avec succès",
+    "deleted": "Téléversement supprimé avec succès",
+    "no_file": "Aucun fichier fourni",
+    "not_found": "Téléversement introuvable",
+    "invalid_format": "Format de fichier invalide. Seuls JPG, PNG et WEBP sont autorisés.",
+    "size_exceeded": "La taille du fichier dépasse la limite de 5 Mo.",
+    "invalid_content": "Le contenu du fichier ne correspond pas à un format d'image autorisé.",
+    "malware_detected": "Le fichier téléversé a échoué à l'analyse antivirus.",
+    "unsupported_format": "Format de fichier non pris en charge. {{description}}"
+  },
+  "i18n": {
+    "file_required": "Le fichier JSON de langue est obligatoire",
+    "uploaded": "Langue téléversée avec succès",
+    "not_found": "Langue introuvable",
+    "invalid_code": "Le code de langue doit utiliser un format ISO comme \"es\" ou \"pt-br\"",
+    "name_required": "Le nom de la langue est obligatoire",
+    "invalid_direction": "La direction doit être \"ltr\" ou \"rtl\"",
+    "invalid_json": "Le fichier de langue téléversé doit être un JSON valide",
+    "missing_keys": "Le fichier de langue ne contient pas les clés obligatoires : {{keys}}"
+  },
+  "errors": {
+    "server_error": "Erreur interne du serveur",
+    "not_found": "Ressource introuvable",
+    "not_found_path": "Impossible de trouver {{path}} sur ce serveur !",
+    "unauthorized": "Accès non autorisé",
+    "forbidden": "Accès interdit",
+    "invalid_token": "Jeton invalide. Veuillez vous reconnecter !",
+    "token_expired": "Votre jeton a expiré ! Veuillez vous reconnecter.",
+    "duplicate_field": "{{value}} existe déjà. Veuillez utiliser une autre valeur !",
+    "invalid_input": "Données d'entrée invalides. {{details}}",
+    "invalid_id": "Ressource introuvable. Invalide : {{path}}",
+    "something_wrong": "Une erreur est survenue !",
+    "cors_not_allowed": "Non autorisé par CORS",
+    "no_token": "Aucun jeton fourni",
+    "token_blacklisted": "Le jeton est sur liste noire",
+    "request_origin_not_allowed": "L'origine de la requête n'est pas autorisée"
+  },
+  "rateLimit": {
+    "global": "Trop de requêtes depuis cette IP, veuillez réessayer dans 15 minutes",
+    "auth": "Trop de tentatives d'authentification, veuillez réessayer dans une heure",
+    "upload": "Trop de fichiers téléversés depuis cette IP, veuillez réessayer dans une heure"
+  },
+  "mail": {
+    "subjects": {
+      "welcome": "Bienvenue sur notre plateforme !",
+      "verify_email": "Vérifiez votre adresse e-mail",
+      "reset_password": "Réinitialisez votre mot de passe",
+      "password_changed": "Mot de passe modifié",
+      "login_new_device": "Nouvelle connexion détectée",
+      "account_locked": "Compte verrouillé",
+      "security_alert": "Alerte de sécurité",
+      "admin_invitation": "Invitation administrateur",
+      "notification": "Notification"
+    },
+    "greeting": "Bonjour {{name}},",
+    "welcome": {
+      "title": "Bienvenue {{name}} !",
+      "body": "Merci pour votre inscription. Veuillez vérifier votre e-mail.",
+      "button": "Vérifier l'e-mail"
+    },
+    "verifyEmail": {
+      "body": "Cliquez sur le lien ci-dessous pour vérifier votre e-mail. Ce lien expire dans 24 heures.",
+      "button": "Vérifier l'e-mail"
+    },
+    "resetPassword": {
+      "body": "Vous avez demandé une réinitialisation de mot de passe. Cliquez sur le lien ci-dessous. Il expire dans 1 heure.",
+      "button": "Réinitialiser le mot de passe"
+    },
+    "passwordChanged": {
+      "body": "Votre mot de passe a récemment été modifié.",
+      "time": "Heure : {{time}}",
+      "ip": "IP : {{ip}}",
+      "warning": "Si vous n'êtes pas à l'origine de cette modification, contactez immédiatement le support.",
+      "unknown": "Inconnu"
+    },
+    "loginNewDevice": {
+      "title": "Nouvelle connexion détectée",
+      "body": "Une nouvelle connexion a été détectée sur votre compte.",
+      "device": "Appareil : {{device}}",
+      "ip": "IP : {{ip}}",
+      "time": "Heure : {{time}}"
+    },
+    "accountLocked": {
+      "title": "Compte verrouillé",
+      "body": "Votre compte a été verrouillé à cause de trop nombreuses tentatives de connexion échouées.",
+      "unlock": "Heure de déverrouillage : {{time}}"
+    },
+    "securityAlert": {
+      "title": "Alerte de sécurité",
+      "admin": "Administrateur : {{name}}",
+      "details": "Détails : {{details}}"
+    },
+    "adminInvitation": {
+      "title": "Invitation administrateur",
+      "body": "Vous avez été invité à rejoindre le panneau d'administration.",
+      "button": "Accepter l'invitation"
+    }
+  }
+}

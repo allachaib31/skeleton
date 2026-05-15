@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build and test output
+dist/
+coverage/
+playwright-report/
+test-results/
+.vite/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Tooling and OS files
+.DS_Store
+.idea/
+.vscode/
+*.log

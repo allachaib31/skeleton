@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build and test output
+dist/
+coverage/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime storage and logs
+storage/
+logs/
+*.log
+
+# Tooling and OS files
+.DS_Store
+.idea/
+.vscode/
