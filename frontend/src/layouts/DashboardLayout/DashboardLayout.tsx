@@ -20,9 +20,9 @@ export function DashboardLayout() {
   }
 
   return (
-    <div className="flex min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="flex min-h-screen bg-background text-foreground">
       {/* Sidebar Placeholder */}
-      <aside className="w-64 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hidden md:block">
+      <aside className="w-64 border-r border-white/10 bg-secondary hidden md:block">
         <div className="p-6">
           <h1 className="text-xl font-bold text-primary">{t('nav.dashboard')}</h1>
         </div>

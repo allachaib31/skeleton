@@ -21,7 +21,7 @@ export const buildPaginationMeta = (total: number, page: number, limit: number):
 
 export const parsePaginationQuery = (query: any) => {
   const page = Math.max(1, parseInt(query.page as string) || 1);
-  const limit = Math.min(100, Math.max(1, parseInt(query.limit as string) || 20));
+  const limit = Math.min(300, Math.max(1, parseInt(query.limit as string) || 20));
   return { page, limit, skip: (page - 1) * limit };
 };
 

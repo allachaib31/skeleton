@@ -39,3 +39,14 @@ export const uploadRateLimit = rateLimit({
   legacyHeaders: false,
   handler,
 });
+
+export const paymentCodeRedeemRateLimit = rateLimit({
+  store: process.env.NODE_ENV === 'test' ? undefined : createStore('rl:payment-code:'),
+  skip: () => process.env.NODE_ENV === 'test',
+  windowMs: 10 * 60 * 1000,
+  max: 6,
+  message: 'rateLimit.payment_code',
+  standardHeaders: true,
+  legacyHeaders: false,
+  handler,
+});

@@ -13,7 +13,8 @@ import { asyncHandler } from '../../common/utils/asyncHandler';
 import {
   updateProfileSchema,
   deleteAccountSchema,
-  changePasswordSchema
+  changePasswordSchema,
+  listFinancialMovementsSchema,
 } from './users.validator';
 
 const router = Router();
@@ -62,6 +63,9 @@ router.patch(
   validate(updateProfileSchema),
   asyncHandler(UsersController.updateProfile)
 );
+
+router.get('/me/levels', asyncHandler(UsersController.getLevels));
+router.get('/me/financial-movements', validate(listFinancialMovementsSchema, 'query'), asyncHandler(UsersController.getFinancialMovements));
 
 /**
  * @swagger

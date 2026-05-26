@@ -5,7 +5,7 @@ import { Button } from './Button';
 import { Globe, Check } from 'lucide-react';
 
 export function LanguageSwitcher() {
-  const { language, setLanguage } = useLanguageStore();
+  const { language, direction, setLanguage } = useLanguageStore();
   const { data: languagesResponse } = useLanguages();
 
   const options = languagesResponse?.data ?? [
@@ -16,7 +16,8 @@ export function LanguageSwitcher() {
 
   return (
     <Dropdown
-      align="right"
+      align={direction === 'rtl' ? 'left' : 'right'}
+      contentClassName="w-[calc(100vw-2rem)] max-w-xs sm:w-56"
       trigger={
         <Button variant="ghost" size="sm" className="flex items-center gap-2 h-10 px-3">
           <Globe size={18} />
@@ -25,12 +26,12 @@ export function LanguageSwitcher() {
       }
       items={options.map(opt => ({
         label: (
-          <div className="flex items-center justify-between w-full">
-            <div className="flex items-center gap-3">
-              <span className="text-xs font-bold uppercase text-slate-400">{opt.code}</span>
-              <span>{opt.name}</span>
+          <div className="flex min-w-0 w-full items-center justify-between gap-3">
+            <div className="flex min-w-0 items-center gap-3">
+              <span className="shrink-0 text-xs font-bold uppercase text-slate-400">{opt.code}</span>
+              <span className="min-w-0 break-words text-start [overflow-wrap:anywhere]">{opt.name}</span>
             </div>
-            {language === opt.code && <Check size={14} className="text-primary" />}
+            {language === opt.code && <Check size={14} className="shrink-0 text-primary" />}
           </div>
         ),
         onClick: () => void setLanguage(opt.code),

@@ -18,6 +18,19 @@ export interface AuthResponse {
   accessToken: string;
 }
 
+export interface TwoFactorRequiredResponse {
+  requiresTwoFactor: true;
+  twoFactorToken: string;
+}
+
+export type LoginResponse = AuthResponse | TwoFactorRequiredResponse;
+
+export interface TwoFactorSetupResponse {
+  secret: string;
+  otpAuthUrl: string;
+  qrCodeDataUrl: string;
+}
+
 export interface RefreshResponse {
   accessToken: string;
 }

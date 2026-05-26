@@ -13,6 +13,7 @@ export function NotificationBell() {
   return (
     <Dropdown
       align="right"
+      contentClassName="w-[calc(100vw-2rem)] sm:w-80"
       trigger={
         <div className="relative">
           <Button variant="ghost" size="sm" className="relative h-10 w-10 p-0 rounded-full">

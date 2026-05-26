@@ -23,11 +23,11 @@ export function Drawer({ isOpen, onClose, title, children }: DrawerProps) {
     <div className="fixed inset-0 z-50 flex justify-end bg-slate-900/50 backdrop-blur-sm">
       <div 
         className={cn(
-          "h-full w-full max-w-md bg-white dark:bg-slate-900 shadow-2xl transition-transform duration-300 transform",
+          "h-full w-full max-w-md bg-secondary shadow-2xl transition-transform duration-300 transform",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-slate-800">
+        <div className="flex items-center justify-between p-6 border-b border-white/10">
           {title && <h2 className="text-lg font-semibold">{title}</h2>}
           <Button variant="ghost" size="sm" onClick={onClose}>
             <X size={20} />

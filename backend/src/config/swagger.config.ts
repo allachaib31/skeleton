@@ -5,9 +5,9 @@ const options: import('swagger-jsdoc').Options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Production Backend API',
+      title: 'tafa3olcard Backend API',
       version: '1.0.0',
-      description: 'API Documentation for the production-ready Node.js + Express + TypeScript backend skeleton',
+      description: 'API Documentation for the tafa3olcard backend',
     },
     servers: [
       {

@@ -14,7 +14,7 @@ export default function AdminLayout() {
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50 dark:bg-slate-950 admin-area">
+    <div className="flex h-screen overflow-hidden bg-background text-foreground admin-area">
       <style>{`
         .admin-area { --primary: 221.2 83.2% 53.3%; } /* We could change this to red */
         .admin-area { --primary: 0 72% 51%; } /* Red accent for admin */

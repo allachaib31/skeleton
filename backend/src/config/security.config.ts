@@ -11,7 +11,7 @@ const rateLimitHandler = (req: any, res: any, _next: any, options: any) => {
 
 export const globalLimit = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
+  max: env.NODE_ENV === 'production' ? 1000 : 5000,
   message: 'rateLimit.global',
   standardHeaders: true,
   legacyHeaders: false,

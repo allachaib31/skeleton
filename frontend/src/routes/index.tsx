@@ -1,14 +1,13 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import RootLayout from '@/layouts/RootLayout';
 import AuthLayout from '@/layouts/AuthLayout';
-import DashboardLayout from '@/layouts/DashboardLayout';
 import AdminLayout from '@/layouts/AdminLayout';
 import PublicLayout from '@/layouts/PublicLayout';
 import ForbiddenPage from '@/pages/public/ForbiddenPage';
 import { publicRoutes } from './public.routes';
 import { authRoutes } from './auth.routes';
-import { privateRoutes } from './private.routes';
 import { adminRoutes } from './admin.routes';
+import { shopRoutes } from '@/features/shop/routes';
 import { RouteErrorBoundary } from './components/RouteErrorBoundary';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { PermissionRoute } from './components/PermissionRoute';
@@ -33,16 +32,8 @@ export const router = createBrowserRouter([
       
       // Private Routes
       {
-        path: '/app',
-        element: (
-          <ProtectedRoute>
-            <DashboardLayout />
-          </ProtectedRoute>
-        ),
-        children: [
-          { index: true, element: <Navigate to="profile" replace /> },
-          ...(privateRoutes[0].children ?? []),
-        ],
+        path: '/app/*',
+        element: <Navigate to="/shop/dashboard" replace />,
       },
       
       // Admin Routes
@@ -61,6 +52,9 @@ export const router = createBrowserRouter([
         ],
       },
       
+      // tafa3olcard marketplace (client-facing storefront)
+      ...shopRoutes,
+
       // 403 Forbidden
       {
         path: '/403',

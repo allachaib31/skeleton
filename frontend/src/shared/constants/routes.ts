@@ -9,12 +9,11 @@ export const ROUTES = {
     RESET_PASSWORD: '/reset-password',
     VERIFY_EMAIL: '/verify-email',
   },
-  APP: {
-    DASHBOARD: '/app/dashboard',
-    PROFILE: '/app/profile',
-    SETTINGS: '/app/settings',
-    NOTIFICATIONS: '/app/notifications',
-    SESSIONS: '/app/sessions',
+  SHOP: {
+    DASHBOARD: '/shop/dashboard',
+    PROFILE: '/shop/profile',
+    WALLET: '/shop/wallet',
+    ORDERS: '/shop/orders',
   },
   ADMIN: {
     DASHBOARD: '/admin/dashboard',

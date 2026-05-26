@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Production Backend API",
+    "title": "tafa3olcard Backend API",
     "version": "1.0.0",
-    "description": "API Documentation for the production-ready Node.js + Express + TypeScript backend skeleton"
+    "description": "API Documentation for the tafa3olcard backend"
   },
   "servers": [
     {
@@ -26,6 +26,432 @@
     }
   ],
   "paths": {
+    "/admin/clients": {
+      "get": {
+        "summary": "List admin clients",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Clients retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create admin client",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Client created"
+          }
+        }
+      }
+    },
+    "/admin/clients/financial-movements": {
+      "get": {
+        "summary": "List all client financial movements",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Financial movements retrieved"
+          }
+        }
+      }
+    },
+    "/admin/clients/special-prices": {
+      "get": {
+        "summary": "List all client product special prices",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client special prices retrieved"
+          }
+        }
+      }
+    },
+    "/admin/clients/special-prices/bulk-delete": {
+      "patch": {
+        "summary": "Soft delete selected client product special prices",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client special prices soft deleted"
+          }
+        }
+      }
+    },
+    "/admin/clients/special-prices/{specialPriceId}": {
+      "patch": {
+        "summary": "Update client product special price",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "specialPriceId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client special price updated"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}": {
+      "get": {
+        "summary": "Get admin client details",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client retrieved"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update admin client",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client updated"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Soft delete admin client",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client soft deleted"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/movements": {
+      "post": {
+        "summary": "Create client financial movement",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Financial movement created"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/open-credit": {
+      "patch": {
+        "summary": "Update client open credit limit",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client open credit updated"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/levels": {
+      "get": {
+        "summary": "List client service levels",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client levels retrieved"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/levels/generate": {
+      "post": {
+        "summary": "Generate missing client service levels",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client levels generated"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/levels/{levelId}": {
+      "patch": {
+        "summary": "Update client service level",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "levelId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client level updated"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/special-prices": {
+      "get": {
+        "summary": "List client product special prices",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client special prices retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create client product special price",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Client special price created"
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}/special-prices/bulk-delete": {
+      "patch": {
+        "summary": "Soft delete selected client product special prices",
+        "tags": [
+          "AdminClients"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Client special prices soft deleted"
+          }
+        }
+      }
+    },
     "/admin/dashboard": {
       "get": {
         "summary": "Get dashboard statistics",
@@ -571,6 +997,73 @@
         }
       }
     },
+    "/auth/2fa/verify-login": {
+      "post": {
+        "summary": "Complete login with two-factor authentication",
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Login successful"
+          }
+        }
+      }
+    },
+    "/auth/2fa/setup": {
+      "post": {
+        "summary": "Start two-factor authentication setup",
+        "tags": [
+          "Auth"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Two-factor setup started"
+          }
+        }
+      }
+    },
+    "/auth/2fa/enable": {
+      "post": {
+        "summary": "Enable two-factor authentication",
+        "tags": [
+          "Auth"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Two-factor authentication enabled"
+          }
+        }
+      }
+    },
+    "/auth/2fa/disable": {
+      "post": {
+        "summary": "Disable two-factor authentication",
+        "tags": [
+          "Auth"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Two-factor authentication disabled"
+          }
+        }
+      }
+    },
     "/auth/logout": {
       "post": {
         "summary": "Logout user",
@@ -932,6 +1425,88 @@
         }
       }
     },
+    "/admin/settings/payment-codes": {
+      "get": {
+        "summary": "List payment codes",
+        "tags": [
+          "PaymentCodes"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Payment codes retrieved"
+          }
+        }
+      }
+    },
+    "/admin/settings/payment-codes/journal": {
+      "get": {
+        "summary": "List payment code redeem journal entries",
+        "tags": [
+          "PaymentCodes"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Payment code journal retrieved"
+          }
+        }
+      }
+    },
+    "/admin/settings/payment-codes/{id}": {
+      "patch": {
+        "summary": "Update payment code",
+        "tags": [
+          "PaymentCodes"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Payment code updated"
+          }
+        }
+      }
+    },
+    "/payment-codes/redeem": {
+      "post": {
+        "summary": "Redeem payment code",
+        "tags": [
+          "PaymentCodes"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Payment code redeemed"
+          }
+        }
+      }
+    },
     "/admin/permissions": {
       "get": {
         "summary": "List all permissions",
@@ -946,6 +1521,24 @@
         "responses": {
           "200": {
             "description": "List of permissions"
+          }
+        }
+      }
+    },
+    "/admin/settings/pricing-simulation/calculate": {
+      "post": {
+        "summary": "Calculate product final price simulation",
+        "tags": [
+          "PricingSimulation"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pricing simulation calculated"
           }
         }
       }
@@ -1086,6 +1679,1209 @@
         "responses": {
           "200": {
             "description": "Role deleted"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis": {
+      "get": {
+        "summary": "List settings APIs",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "APIs retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create settings API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "API created"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/gift-card-providers/simulate": {
+      "post": {
+        "summary": "Simulate Gift Card Providers API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gift Card Providers API simulated"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/gift-card-providers-2/simulate": {
+      "post": {
+        "summary": "Simulate Gift Card Providers2 API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gift Card Providers2 API simulated"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/social-media-service-providers/simulate": {
+      "post": {
+        "summary": "Simulate Social Media Service Providers API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Social Media Service Providers API simulated"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/temporary-number-coding-sites/simulate": {
+      "post": {
+        "summary": "Simulate Temporary Number Coding Sites API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Temporary Number Coding Sites API simulated"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/sync-all": {
+      "post": {
+        "summary": "Force sync all supported settings APIs",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "APIs synced"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/{id}/sync": {
+      "post": {
+        "summary": "Force sync one settings API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "API synced"
+          }
+        }
+      }
+    },
+    "/admin/settings/apis/{id}": {
+      "patch": {
+        "summary": "Update settings API",
+        "tags": [
+          "SettingsApis"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "API updated"
+          }
+        }
+      }
+    },
+    "/settings/app": {
+      "get": {
+        "summary": "Get public application branding settings",
+        "tags": [
+          "SettingsApp"
+        ],
+        "responses": {
+          "200": {
+            "description": "App settings retrieved"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update application branding settings",
+        "tags": [
+          "SettingsApp"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "App settings updated"
+          }
+        }
+      }
+    },
+    "/admin/settings/currencies": {
+      "get": {
+        "summary": "List settings currencies",
+        "tags": [
+          "SettingsCurrencies"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Currencies retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create settings currency",
+        "tags": [
+          "SettingsCurrencies"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Currency created"
+          }
+        }
+      }
+    },
+    "/admin/settings/currencies/{id}": {
+      "patch": {
+        "summary": "Update settings currency",
+        "tags": [
+          "SettingsCurrencies"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Currency updated"
+          }
+        }
+      }
+    },
+    "/admin/settings/payment-gateways": {
+      "get": {
+        "summary": "List payment gateways",
+        "tags": [
+          "SettingsPaymentGateways"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Payment gateways retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create payment gateway",
+        "tags": [
+          "SettingsPaymentGateways"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Payment gateway created"
+          }
+        }
+      }
+    },
+    "/admin/settings/payment-gateways/{id}": {
+      "patch": {
+        "summary": "Update payment gateway",
+        "tags": [
+          "SettingsPaymentGateways"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Payment gateway updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/categories": {
+      "get": {
+        "summary": "List stock categories",
+        "tags": [
+          "StockCategories"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stock categories retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock category",
+        "tags": [
+          "StockCategories"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "JSON object with en",
+                    "fr": null,
+                    "ar": null
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "JSON object with en",
+                    "fr": null,
+                    "ar": null
+                  },
+                  "serviceId": {
+                    "type": "string"
+                  },
+                  "isVisible": {
+                    "type": "boolean"
+                  },
+                  "isDeleted": {
+                    "type": "boolean"
+                  },
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Stock category created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/categories/{id}": {
+      "patch": {
+        "summary": "Update stock category",
+        "tags": [
+          "StockCategories"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stock category updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/product-groups": {
+      "get": {
+        "summary": "List stock product groups",
+        "tags": [
+          "StockProductGroups"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product groups retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock product group",
+        "tags": [
+          "StockProductGroups"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Product group created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/product-requirements": {
+      "get": {
+        "summary": "List stock product requirements",
+        "tags": [
+          "StockProductRequirements"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product requirements retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock product requirement",
+        "tags": [
+          "StockProductRequirements"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Product requirement created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/product-requirements/{id}": {
+      "patch": {
+        "summary": "Update stock product requirement",
+        "tags": [
+          "StockProductRequirements"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product requirement updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products": {
+      "get": {
+        "summary": "List stock products",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Products retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock product",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Product created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products/import/preview": {
+      "post": {
+        "summary": "Preview provider products before importing",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Provider products retrieved"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products/import": {
+      "post": {
+        "summary": "Import provider products into stock products",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Provider products imported"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products/{id}/api-connections": {
+      "get": {
+        "summary": "List product API connections",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product API connections retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create product API connection",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Product API connection created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products/{id}/api-connections/{connectionId}": {
+      "patch": {
+        "summary": "Update product API connection",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "connectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product API connection updated"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Soft delete product API connection",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "connectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product API connection deleted"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products/{id}/api-connections/{connectionId}/activate": {
+      "patch": {
+        "summary": "Activate product API connection",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "connectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product API connection activated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/products/{id}": {
+      "get": {
+        "summary": "Get stock product",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product retrieved"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update stock product",
+        "tags": [
+          "StockProducts"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/promotions": {
+      "get": {
+        "summary": "List stock promotions",
+        "tags": [
+          "StockPromotions"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Promotions retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock promotion",
+        "tags": [
+          "StockPromotions"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Promotion created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/promotions/usages": {
+      "get": {
+        "summary": "List stock promotion usages",
+        "tags": [
+          "StockPromotions"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Promotion usages retrieved"
+          }
+        }
+      }
+    },
+    "/admin/stocks/promotions/{id}": {
+      "patch": {
+        "summary": "Update stock promotion",
+        "tags": [
+          "StockPromotions"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Promotion updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/service-groups": {
+      "get": {
+        "summary": "List stock service groups",
+        "tags": [
+          "StockServiceGroups"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Service groups retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock service group",
+        "tags": [
+          "StockServiceGroups"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Service group created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/service-groups/{id}": {
+      "patch": {
+        "summary": "Update stock service group",
+        "tags": [
+          "StockServiceGroups"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Service group updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/services": {
+      "get": {
+        "summary": "List stock services",
+        "tags": [
+          "StockServices"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stock services retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock service",
+        "tags": [
+          "StockServices"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "JSON object with en",
+                    "fr": null,
+                    "ar": null
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "JSON object with en",
+                    "fr": null,
+                    "ar": null
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "DIGITAL_BASICS",
+                      "SOCIAL_REINFORCERS",
+                      "ESIM_NUMBER",
+                      "PHONE_NUMBER_GENERATOR"
+                    ]
+                  },
+                  "isVisible": {
+                    "type": "boolean"
+                  },
+                  "isDeleted": {
+                    "type": "boolean"
+                  },
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Stock service created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/services/{id}": {
+      "patch": {
+        "summary": "Update stock service",
+        "tags": [
+          "StockServices"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "JSON object with en",
+                    "fr": null,
+                    "ar": null
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "JSON object with en",
+                    "fr": null,
+                    "ar": null
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "DIGITAL_BASICS",
+                      "SOCIAL_REINFORCERS",
+                      "ESIM_NUMBER",
+                      "PHONE_NUMBER_GENERATOR"
+                    ]
+                  },
+                  "isVisible": {
+                    "type": "boolean"
+                  },
+                  "isDeleted": {
+                    "type": "boolean"
+                  },
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Stock service updated"
+          }
+        }
+      }
+    },
+    "/admin/stocks/warehouses": {
+      "get": {
+        "summary": "List stock warehouses",
+        "tags": [
+          "StockWarehouses"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Warehouses retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock warehouse",
+        "tags": [
+          "StockWarehouses"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Warehouse created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/warehouses/items": {
+      "get": {
+        "summary": "List stock warehouse items",
+        "tags": [
+          "StockWarehouses"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Warehouse items retrieved"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create stock warehouse item",
+        "tags": [
+          "StockWarehouses"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Warehouse item created"
+          }
+        }
+      }
+    },
+    "/admin/stocks/warehouses/items/import": {
+      "post": {
+        "summary": "Import stock warehouse items",
+        "tags": [
+          "StockWarehouses"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Warehouse items imported"
+          }
+        }
+      }
+    },
+    "/admin/stocks/warehouses/{id}": {
+      "patch": {
+        "summary": "Update stock warehouse",
+        "tags": [
+          "StockWarehouses"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Warehouse updated"
           }
         }
       }

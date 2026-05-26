@@ -9,7 +9,7 @@ function App() {
           <Routes>
             <Route path="/" element={
               <div className="flex flex-col items-center justify-center min-h-[80vh] gap-4">
-                <h1 className="text-4xl font-bold text-primary">Frontend Skeleton Loaded</h1>
+                <h1 className="text-4xl font-bold text-primary">tafa3olcard</h1>
                 <p className="text-secondary">Vite + React + TS + Tailwind 4 + Zod</p>
                 <div className="flex gap-2">
                   <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity">

@@ -10,7 +10,7 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
   let error = { ...err };
   error.message = err.message;
 
-  if (env.NODE_ENV === 'development') {
+  if (env.NODE_ENV === 'development' && (!err.isOperational || err.statusCode >= 500)) {
     console.error('ERROR 💥', err);
   }
 

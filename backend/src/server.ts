@@ -7,10 +7,11 @@ import { redis } from './config/redis.config';
 import mongoose from 'mongoose';
 
 import { initQueues } from './queues';
+import { startSettingsApiSyncJob, stopSettingsApiSyncJob } from './jobs/settings-api-sync.job';
+import { startOrderStatusPollJob, stopOrderStatusPollJob } from './jobs/order-status-scheduler.job';
 
 import { initSocket } from './sockets/socket.server';
 import { logger } from './common/utils/logger';
-import { seedRolesAndPermissions } from './database/seeders/roles.seeder';
 
 // Initialize workers
 initQueues().catch(err => logger.error('Worker Init Error', err));
@@ -24,7 +25,6 @@ const startServer = async () => {
   try {
     // Connect to MongoDB
     await connectDatabase();
-    await seedRolesAndPermissions();
     
     // Ensure Redis is active
     if (redis.status !== 'ready') {
@@ -33,6 +33,8 @@ const startServer = async () => {
 
     server.listen(env.PORT, () => {
       logger.info(`🚀 Server is running on port ${env.PORT} in ${env.NODE_ENV} mode`);
+      startSettingsApiSyncJob();
+      startOrderStatusPollJob();
     });
   } catch (error) {
     logger.error('❌ Error starting server:', error);
@@ -62,6 +64,8 @@ const gracefulShutdown = async () => {
       
       redis.disconnect();
       logger.info('📴 Redis disconnected.');
+      stopSettingsApiSyncJob();
+      stopOrderStatusPollJob();
       
       process.exit(0);
     } catch (err) {

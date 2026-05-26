@@ -20,7 +20,7 @@ export interface UserDetail extends User {
 
 export interface AuditLog {
   _id: string;
-  actorId: { name: string; email: string };
+  actorId?: { name?: string; email?: string } | string | null;
   action: string;
   entity: string;
   targetId?: string;

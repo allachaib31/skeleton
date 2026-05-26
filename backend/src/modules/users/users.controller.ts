@@ -16,6 +16,16 @@ export class UsersController {
     sendSuccess(res, user, translate('users.profile_updated', req.language));
   }
 
+  static async getLevels(req: Request, res: Response) {
+    const levels = await UsersService.getLevels(req.user!.id);
+    sendSuccess(res, levels, translate('users.levels_retrieved', req.language));
+  }
+
+  static async getFinancialMovements(req: Request, res: Response) {
+    const result = await UsersService.getFinancialMovements(req.user!.id, req.query);
+    sendSuccess(res, result.data, translate('users.movements_retrieved', req.language), result.meta);
+  }
+
   static async deleteAccount(req: Request, res: Response) {
     const token = req.headers.authorization!.split(' ')[1];
     const decoded = jwt.decode(token) as { jti: string };

@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Card } from '@/shared/components/ui/Card';
 import { useLanguageStore } from '@/app/stores/language.store';
@@ -7,9 +7,14 @@ import { Button } from '@/shared/components/ui/Button';
 export default function AuthLayout() {
   const { language, setLanguage } = useLanguageStore();
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+
+  if (pathname === '/login' || pathname === '/register') {
+    return <Outlet />;
+  }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 dark:bg-slate-950 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground p-4">
       <div className="mb-8 flex flex-col items-center">
         <Link to="/" className="text-3xl font-bold text-primary mb-2">
           {t('app.name')}

@@ -10,22 +10,22 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#3b82f6',
-          foreground: '#ffffff',
+          DEFAULT: '#fdf001',
+          foreground: '#100e22',
         },
         secondary: {
-          DEFAULT: '#64748b',
-          foreground: '#ffffff',
+          DEFAULT: '#28243f',
+          foreground: '#fffde7',
         },
         accent: {
-          DEFAULT: '#8b5cf6',
-          foreground: '#ffffff',
+          DEFAULT: '#34d6c3',
+          foreground: '#100e22',
         },
-        background: '#ffffff',
-        foreground: '#0f172a',
+        background: '#100e22',
+        foreground: '#fffde7',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Zain', 'sans-serif'],
       },
       borderRadius: {
         lg: '0.5rem',

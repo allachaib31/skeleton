@@ -15,6 +15,8 @@ import { NotificationsService } from '../notifications/notifications.service';
 import { logger } from '../../common/utils/logger';
 import { buildPaginationMeta, parsePaginationQuery } from '../../common/helpers/pagination.helper';
 
+const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 export class AdminService {
   // --- DASHBOARD ---
   static async getDashboard() {
@@ -246,12 +248,41 @@ export class AdminService {
 
   // --- AUDIT LOGS ---
   static async getAuditLogs(query: Record<string, unknown>) {
-    const limit = Math.min(parseInt(query.limit as string) || 20, 100);
+    const { page, limit, skip } = parsePaginationQuery(query);
     const filter: Record<string, unknown> = {};
     
     if (query.actorId) filter.actorId = query.actorId;
-    if (query.action) filter.action = query.action;
-    if (query.entity) filter.entity = query.entity;
+    if (typeof query.action === 'string' && query.action.trim()) {
+      filter.action = { $regex: escapeRegex(query.action.trim()), $options: 'i' };
+    }
+    if (typeof query.entity === 'string' && query.entity.trim()) {
+      filter.entity = { $regex: escapeRegex(query.entity.trim()), $options: 'i' };
+    }
+    if (query.search && typeof query.search === 'string') {
+      const search = query.search.trim();
+      if (search) {
+        const searchRegex = new RegExp(escapeRegex(search), 'i');
+        const searchFilters: Record<string, unknown>[] = [
+          { action: searchRegex },
+          { entity: searchRegex },
+          { ip: searchRegex },
+          { userAgent: searchRegex },
+          { 'after.providerAction': searchRegex },
+          { 'after.apiGroup': searchRegex },
+          { 'after.request.curl': searchRegex },
+          { 'after.request.url': searchRegex },
+          { 'after.request.body': searchRegex },
+          { 'after.response.raw': searchRegex },
+          { 'after.response.errorInfo.key': searchRegex },
+          { 'after.error.message': searchRegex },
+        ];
+        if (mongoose.Types.ObjectId.isValid(search)) {
+          searchFilters.push({ targetId: new mongoose.Types.ObjectId(search) });
+          searchFilters.push({ actorId: new mongoose.Types.ObjectId(search) });
+        }
+        filter.$or = searchFilters;
+      }
+    }
     
     if (query.dateFrom || query.dateTo) {
       const createdAt: Record<string, Date> = {};
@@ -260,21 +291,16 @@ export class AdminService {
       filter.createdAt = createdAt;
     }
 
-    if (query.cursor) {
-      filter._id = { $lt: query.cursor };
-    }
+    const [data, total] = await Promise.all([
+      AuditLog.find(filter)
+        .sort({ _id: -1 })
+        .skip(skip)
+        .limit(limit)
+        .populate('actorId', 'name email'),
+      AuditLog.countDocuments(filter),
+    ]);
 
-    const data = await AuditLog.find(filter)
-      .sort({ _id: -1 })
-      .limit(limit)
-      .populate('actorId', 'name email');
-
-    let nextCursor = null;
-    if (data.length === limit) {
-      nextCursor = data[data.length - 1]._id.toString();
-    }
-
-    return { data, nextCursor };
+    return { data, ...buildPaginationMeta(total, page, limit) };
   }
 
   // --- SESSIONS ---

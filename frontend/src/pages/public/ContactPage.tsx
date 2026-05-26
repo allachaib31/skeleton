@@ -38,7 +38,7 @@ export default function ContactPage() {
               <CheckCircle size={40} />
             </div>
             <div className="space-y-2">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">{t('runtime.messageSent')}</h2>
+              <h2 className="text-2xl font-bold text-foreground">{t('runtime.messageSent')}</h2>
               <p className="text-slate-500">{t('runtime.messageSentDescription')}</p>
             </div>
             <Button variant="outline" onClick={() => setIsSubmitted(false)}>

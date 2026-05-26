@@ -40,17 +40,17 @@ export function Modal({ isOpen, onClose, title, children, size = 'md' }: ModalPr
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4 bg-slate-900/50 backdrop-blur-sm">
       <div 
         className={cn(
-          "w-full bg-white dark:bg-slate-900 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-800",
+          "flex max-h-[90vh] w-full flex-col bg-secondary rounded-xl shadow-2xl border border-white/10",
           sizes[size]
         )}
       >
-        <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-slate-800">
+        <div className="flex shrink-0 items-center justify-between p-6 border-b border-white/10">
           {title && <h2 className="text-lg font-semibold">{title}</h2>}
           <Button variant="ghost" size="sm" onClick={onClose} className="ml-auto">
             <X size={20} />
           </Button>
         </div>
-        <div className="p-6">
+        <div className="min-h-0 flex-1 overflow-y-auto p-6">
           {children}
         </div>
       </div>

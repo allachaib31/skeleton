@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import LoginPage from '@/pages/auth/LoginPage';
 import { useLogin } from '@/features/auth/hooks/useLogin';
 import { HelmetProvider } from 'react-helmet-async';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // Mock hook
 vi.mock('@/features/auth/hooks/useLogin', () => ({
@@ -11,12 +12,20 @@ vi.mock('@/features/auth/hooks/useLogin', () => ({
 }));
 
 const renderLoginPage = () => {
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: { retry: false },
+      mutations: { retry: false },
+    },
+  });
   return render(
-    <HelmetProvider>
-      <BrowserRouter>
-        <LoginPage />
-      </BrowserRouter>
-    </HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <HelmetProvider>
+        <BrowserRouter>
+          <LoginPage />
+        </BrowserRouter>
+      </HelmetProvider>
+    </QueryClientProvider>
   );
 };
 

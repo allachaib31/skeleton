@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { useInfiniteQuery, useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
+import i18n from '@/config/i18n';
 import { 
   getNotifications, 
   getUnreadCount, 
@@ -28,6 +29,17 @@ export const useNotifications = (params: PaginationQuery) => {
 
   return query;
 };
+
+export const useInfiniteNotifications = (limit = 10) =>
+  useInfiniteQuery({
+    queryKey: [...queryKeys.notifications.list, 'dropdown', limit],
+    queryFn: ({ pageParam = 1 }) => getNotifications({ page: pageParam, limit }),
+    initialPageParam: 1,
+    getNextPageParam: (lastPage) => {
+      if (!lastPage.meta?.hasNext) return undefined;
+      return lastPage.meta.page + 1;
+    },
+  });
 
 export const useUnreadCount = () => {
   const { setUnreadCount } = useNotificationStore();
@@ -70,7 +82,7 @@ export const useMarkAllAsRead = () => {
       localMarkAllRead();
       queryClient.invalidateQueries({ queryKey: queryKeys.notifications.list });
       queryClient.invalidateQueries({ queryKey: queryKeys.notifications.unreadCount });
-      toast.success('All notifications marked as read');
+      toast.success(i18n.t('notifications.markAllReadSuccess'));
     },
   });
 };

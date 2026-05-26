@@ -56,7 +56,7 @@ export default function NotificationsPage() {
 
       <Tabs tabs={tabs} activeTab={activeTab} onChange={(val) => { setActiveTab(val); setPage(1); }} />
 
-      <div className="space-y-1 bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm">
+      <div className="space-y-1 bg-secondary rounded-xl overflow-hidden border border-white/10 shadow-sm">
         {isLoading ? (
           Array.from({ length: 5 }).map((_, i) => (
             <div key={i} className="p-4 flex gap-4 animate-pulse">

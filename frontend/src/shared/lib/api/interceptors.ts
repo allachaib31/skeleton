@@ -6,6 +6,22 @@ import { API_ENDPOINTS } from './endpoints';
 let isRefreshing = false;
 let failedQueue: any[] = [];
 
+const AUTH_401_NO_REFRESH_ENDPOINTS = new Set<string>([
+  API_ENDPOINTS.AUTH.LOGIN,
+  API_ENDPOINTS.AUTH.TWO_FACTOR_VERIFY_LOGIN,
+  API_ENDPOINTS.AUTH.REGISTER,
+  API_ENDPOINTS.AUTH.FORGOT_PASSWORD,
+  API_ENDPOINTS.AUTH.RESET_PASSWORD,
+  API_ENDPOINTS.AUTH.VERIFY_EMAIL,
+  API_ENDPOINTS.AUTH.RESEND_VERIFICATION,
+  API_ENDPOINTS.AUTH.REFRESH,
+]);
+
+const shouldSkipRefresh = (url?: string) => {
+  if (!url) return false;
+  return Array.from(AUTH_401_NO_REFRESH_ENDPOINTS).some((endpoint) => url.endsWith(endpoint));
+};
+
 const processQueue = (error: any, token: string | null = null) => {
   failedQueue.forEach((prom) => {
     if (error) {
@@ -33,7 +49,7 @@ export const setupInterceptors = (api: AxiosInstance) => {
       if (
         error.response.status === 401 && 
         !originalRequest._retry && 
-        originalRequest.url !== API_ENDPOINTS.AUTH.REFRESH
+        !shouldSkipRefresh(originalRequest.url)
       ) {
         if (isRefreshing) {
           return new Promise((resolve, reject) => {

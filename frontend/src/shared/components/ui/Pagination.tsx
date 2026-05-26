@@ -1,6 +1,7 @@
 import { Button } from './Button';
-import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react';
+import { ChevronsLeft, ChevronsRight, ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
+import { useLanguageStore } from '@/app/stores/language.store';
 
 interface PaginationProps {
   total: number;
@@ -11,6 +12,8 @@ interface PaginationProps {
 }
 
 export function Pagination({ total, page, limit, onChange, className }: PaginationProps) {
+  const { direction } = useLanguageStore();
+  const isRtl = direction === 'rtl';
   const totalPages = Math.ceil(total / limit);
   
   if (totalPages <= 1) return null;
@@ -37,9 +40,18 @@ export function Pagination({ total, page, limit, onChange, className }: Paginati
         variant="outline"
         size="sm"
         disabled={page === 1}
+        onClick={() => onChange(1)}
+      >
+        {isRtl ? <ChevronsRight size={16} /> : <ChevronsLeft size={16} />}
+      </Button>
+
+      <Button
+        variant="outline"
+        size="sm"
+        disabled={page === 1}
         onClick={() => onChange(page - 1)}
       >
-        <ChevronLeft size={16} />
+        {isRtl ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
       </Button>
       
       {getPageNumbers().map((n, idx) => (
@@ -66,7 +78,16 @@ export function Pagination({ total, page, limit, onChange, className }: Paginati
         disabled={page === totalPages}
         onClick={() => onChange(page + 1)}
       >
-        <ChevronRight size={16} />
+        {isRtl ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
+      </Button>
+
+      <Button
+        variant="outline"
+        size="sm"
+        disabled={page === totalPages}
+        onClick={() => onChange(totalPages)}
+      >
+        {isRtl ? <ChevronsLeft size={16} /> : <ChevronsRight size={16} />}
       </Button>
     </nav>
   );

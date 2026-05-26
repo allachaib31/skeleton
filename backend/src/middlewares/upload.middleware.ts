@@ -17,6 +17,11 @@ export const uploadPolicies = {
     maxSizeBytes: 5 * 1024 * 1024,
     description: 'Avatar images: JPEG, PNG, or WEBP up to 5MB.',
   },
+  serviceImage: {
+    allowedMimeTypes: ['image/jpeg', 'image/png', 'image/webp'],
+    maxSizeBytes: 5 * 1024 * 1024,
+    description: 'Service images: JPEG, PNG, or WEBP up to 5MB.',
+  },
   languageJson: {
     allowedMimeTypes: ['application/json'],
     maxSizeBytes: 256 * 1024,
@@ -51,6 +56,7 @@ const upload = multer({
 
 export const uploadSingle = (fieldName: string) => upload.single(fieldName);
 export const uploadMultiple = (fieldName: string, maxCount: number) => upload.array(fieldName, maxCount);
+export const uploadFields = (fields: { name: string; maxCount: number }[]) => upload.fields(fields);
 
 const imageSignatureValidators: Record<string, (buffer: Buffer) => boolean> = {
   'image/jpeg': (buffer) => buffer.length >= 3 && buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff,

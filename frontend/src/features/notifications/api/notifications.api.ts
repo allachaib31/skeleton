@@ -10,6 +10,11 @@ export interface Notification {
   read: boolean;
   createdAt: string;
   href?: string;
+  data?: {
+    titleKey?: string;
+    messageKey?: string;
+    [key: string]: unknown;
+  };
 }
 
 interface RawNotification extends Omit<Notification, 'read'> {
@@ -25,7 +30,7 @@ interface NotificationsPayload {
   totalPages: number;
 }
 
-const normalizeNotification = (notification: RawNotification): Notification => ({
+export const normalizeNotification = (notification: RawNotification): Notification => ({
   ...notification,
   read: notification.read ?? notification.isRead ?? false,
 });

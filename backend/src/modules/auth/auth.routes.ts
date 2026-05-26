@@ -9,6 +9,9 @@ import { asyncHandler } from '../../common/utils/asyncHandler';
 import {
   registerSchema,
   loginSchema,
+  verifyTwoFactorLoginSchema,
+  enableTwoFactorSchema,
+  disableTwoFactorSchema,
   verifyEmailSchema,
   forgotPasswordSchema,
   resetPasswordSchema,
@@ -80,6 +83,82 @@ router.post(
   authRateLimit,
   validate(loginSchema),
   asyncHandler(AuthController.login)
+);
+
+/**
+ * @swagger
+ * /auth/2fa/verify-login:
+ *   post:
+ *     summary: Complete login with two-factor authentication
+ *     tags: [Auth]
+ *     responses:
+ *       200:
+ *         description: Login successful
+ */
+router.post(
+  '/2fa/verify-login',
+  authRateLimit,
+  validate(verifyTwoFactorLoginSchema),
+  asyncHandler(AuthController.verifyTwoFactorLogin)
+);
+
+/**
+ * @swagger
+ * /auth/2fa/setup:
+ *   post:
+ *     summary: Start two-factor authentication setup
+ *     tags: [Auth]
+ *     security:
+ *       - BearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Two-factor setup started
+ */
+router.post(
+  '/2fa/setup',
+  csrfOriginGuard,
+  authenticate,
+  asyncHandler(AuthController.setupTwoFactor)
+);
+
+/**
+ * @swagger
+ * /auth/2fa/enable:
+ *   post:
+ *     summary: Enable two-factor authentication
+ *     tags: [Auth]
+ *     security:
+ *       - BearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Two-factor authentication enabled
+ */
+router.post(
+  '/2fa/enable',
+  csrfOriginGuard,
+  authenticate,
+  validate(enableTwoFactorSchema),
+  asyncHandler(AuthController.enableTwoFactor)
+);
+
+/**
+ * @swagger
+ * /auth/2fa/disable:
+ *   post:
+ *     summary: Disable two-factor authentication
+ *     tags: [Auth]
+ *     security:
+ *       - BearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Two-factor authentication disabled
+ */
+router.post(
+  '/2fa/disable',
+  csrfOriginGuard,
+  authenticate,
+  validate(disableTwoFactorSchema),
+  asyncHandler(AuthController.disableTwoFactor)
 );
 
 /**

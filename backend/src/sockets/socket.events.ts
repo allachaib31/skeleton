@@ -5,6 +5,7 @@ export const USER_ONLINE = 'user:online';
 export const USER_OFFLINE = 'user:offline';
 export const ADMIN_AUDIT_LOG = 'admin:audit-log';
 export const UPLOAD_COMPLETED = 'upload:completed';
+export const ORDER_UPDATED = 'order:updated';
 
 export const emitToUser = (userId: string, event: string, data: any) => {
   const io = getIO();

@@ -29,7 +29,7 @@ export default function AboutPage() {
         </Card>
 
         <Card padding="lg" className="space-y-4">
-          <div className="p-3 bg-blue-100 text-blue-600 rounded-xl w-fit">
+          <div className="p-3 bg-accent/10 text-accent rounded-xl w-fit">
             <Code size={24} />
           </div>
           <h3 className="text-xl font-bold">{t('runtime.cuttingEdge')}</h3>

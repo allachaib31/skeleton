@@ -1,0 +1,2697 @@
+{
+  "/home/ala/Desktop/newTafa3ol2/package.json": {
+    "mtime": 1779402610.874086,
+    "ast_hash": "41eddea2c8610c2bb2c8b64a043586dc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/shared/pricing/index.js": {
+    "mtime": 1779437505.5426574,
+    "ast_hash": "df909abd3d7300b331fdb74927bef3d8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/shared/pricing/index.d.ts": {
+    "mtime": 1779437513.6026902,
+    "ast_hash": "63e57c799f2c2b5c5d1632691842c4d2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/nodemon.json": {
+    "mtime": 1778955785.8229284,
+    "ast_hash": "7e3823a8f9a1ff89675215974fb631b0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/.eslintrc.json": {
+    "mtime": 1778824102.618887,
+    "ast_hash": "ce4b130be2aa72a258bf4fd7c95a06e2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/tsconfig.json": {
+    "mtime": 1778954482.0720224,
+    "ast_hash": "bf2edec689c04fe357ad8d57ced44639",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/package.json": {
+    "mtime": 1779402614.3420782,
+    "ast_hash": "a237b68efb7c771fdf6152edda58eb11",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/openapi.json": {
+    "mtime": 1779788117.4101682,
+    "ast_hash": "aa637bf3f5eee876f4f260ab581c4acd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/server.ts": {
+    "mtime": 1779461675.5309696,
+    "ast_hash": "6ff6c9932a4ad60dcb068fed613b678b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/app.ts": {
+    "mtime": 1779787427.6337512,
+    "ast_hash": "559e3f51557c8f3275ef23b80a9e9c57",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/scripts/export-openapi.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "53b4b794cdfa73692f690a0e878a19dd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/sockets/socket.auth.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "84c272eab3da54299f0113d9e6934782",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/sockets/socket.events.ts": {
+    "mtime": 1779460199.6049623,
+    "ast_hash": "fa22f608b98559e63d580da23879e7b1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/sockets/socket.server.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "d112340cbcada839d13a3951269e4633",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/notifications/notifications.types.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "9de18f90cbf44a9c01a65b37a9164751",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/notifications/notification.model.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "34e21002accd2e0afaca07a16aa6f35a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/notifications/notifications.service.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "9cd15e94af524965ed1601dda982e00a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/notifications/notifications.controller.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "46719920af359d2cdd2e630d8dbdd794",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/notifications/notifications.routes.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "1d3406d04173a2d9354c0c6a175f7cc8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/audit/audit-log.model.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "9527c221aaaa00a42bbe180bfdbe0729",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/users/users.service.ts": {
+    "mtime": 1779660542.3836162,
+    "ast_hash": "f6ac4bc805fa6c63d6a9dced823a424f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/users/users.validator.ts": {
+    "mtime": 1779660537.3315995,
+    "ast_hash": "524c5b2a3ad37ccab4a57c7f4caafded",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/users/users.types.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "0a7a2072a79ca7af4a6e87cf282775bc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/users/user.model.ts": {
+    "mtime": 1778956276.462606,
+    "ast_hash": "dd63b4121f75b5b90d47d88ea6335752",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/users/users.controller.ts": {
+    "mtime": 1779659979.2185822,
+    "ast_hash": "5cf46b8797adbbe2c80328b859d5677b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/users/users.routes.ts": {
+    "mtime": 1779660249.646835,
+    "ast_hash": "7fc97964a8535d4e4955bd01d0407935",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/client-financial-movement.model.ts": {
+    "mtime": 1779438954.9934292,
+    "ast_hash": "d1dee3e878f87f9704b8bf2014750e64",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/admin-client.controller.ts": {
+    "mtime": 1779393432.8469296,
+    "ast_hash": "38f8e7b94200ba3203273402c99e55ba",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/admin-client.routes.ts": {
+    "mtime": 1779393438.9829252,
+    "ast_hash": "c62e12805ba5f9f9dc5ba770de3b97bf",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/admin-client.validator.ts": {
+    "mtime": 1778954497.0121956,
+    "ast_hash": "1e2c762947afe2caf9d6837e1c86e7de",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/client-product-special-price.model.ts": {
+    "mtime": 1778954496.7721927,
+    "ast_hash": "42c336b2615bd7b7389f3a171b537ce8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/admin-client.service.ts": {
+    "mtime": 1779394012.0465376,
+    "ast_hash": "15e407a2f2f9171ab49799e9b75c3b24",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin-clients/user-level-groupe.model.ts": {
+    "mtime": 1778936364.8983107,
+    "ast_hash": "e433de845e592206adf07d3076707c60",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-groups/stock-product-group.validator.ts": {
+    "mtime": 1779531217.6549373,
+    "ast_hash": "8a06a8408859d37b0422048c2aae9f0c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-groups/stock-product-group.controller.ts": {
+    "mtime": 1778921459.5906787,
+    "ast_hash": "1eedb7c94b7dda8d60cfada8dbc0279c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-groups/stock-product-group.routes.ts": {
+    "mtime": 1778921459.8786788,
+    "ast_hash": "321d662c3b614ab1f282540a080912f7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-groups/stock-product-group.service.ts": {
+    "mtime": 1779531097.940762,
+    "ast_hash": "b1e7878e35b92551ea69c220e6c59976",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-groups/stock-product-group.model.ts": {
+    "mtime": 1778921458.7026782,
+    "ast_hash": "b4e370ac534f69432011c995f0a626c5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-services/stock-service.model.ts": {
+    "mtime": 1778829134.6046894,
+    "ast_hash": "80961c615f57f092271f8180122a0211",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-services/stock-service.routes.ts": {
+    "mtime": 1779531095.9168723,
+    "ast_hash": "553d879374f5d00c6f87b38015bd664a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-services/stock-service.validator.ts": {
+    "mtime": 1779531216.990966,
+    "ast_hash": "8c734240b417a0ecd3d23b4bf0b28574",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-services/stock-service.service.ts": {
+    "mtime": 1779531097.2847977,
+    "ast_hash": "ef28c08cc1db3efa559ff7859066b192",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-services/stock-service.controller.ts": {
+    "mtime": 1778829135.708694,
+    "ast_hash": "f2414334a5c103e5dd3d6b4f4ed66553",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-codes/payment-code.validator.ts": {
+    "mtime": 1778948464.578033,
+    "ast_hash": "863e7833ca29abe48da726545fced6af",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-codes/payment-code.service.ts": {
+    "mtime": 1779438266.675864,
+    "ast_hash": "200c53387514ed31cf6028041bd363e9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-codes/payment-code.model.ts": {
+    "mtime": 1778948432.797975,
+    "ast_hash": "4cb2c4f1d47ab82618c50371f7a8225e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-codes/payment-code-journal.model.ts": {
+    "mtime": 1778948445.2699986,
+    "ast_hash": "76137c8a7f151a09d69c3a4f9d6bcf9e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-codes/payment-code.routes.ts": {
+    "mtime": 1778949230.0983977,
+    "ast_hash": "ec9ad71d55e90bdfe86ab2e48e4eb2ec",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-codes/payment-code.controller.ts": {
+    "mtime": 1778948546.7261598,
+    "ast_hash": "b7b47189bdea2ac0d0cea87fb07558fb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-currencies/settings-currency.service.ts": {
+    "mtime": 1778828381.9925501,
+    "ast_hash": "ae96640be2c55794b03654e5fc706bda",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-currencies/settings-currency.validator.ts": {
+    "mtime": 1778828381.5245464,
+    "ast_hash": "a9c038ab681708b719e525dda3262b16",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-currencies/settings-currency.controller.ts": {
+    "mtime": 1778828382.5285544,
+    "ast_hash": "bae7b2648cd03b4a8ac47fab409fcff7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-currencies/settings-currency.model.ts": {
+    "mtime": 1778828381.0005424,
+    "ast_hash": "52a75408d7bff7d8c9174506e901a7ee",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-currencies/settings-currency.routes.ts": {
+    "mtime": 1778828383.0805588,
+    "ast_hash": "1e2c21418e223f2c61c59d5de94e2764",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-promotions/stock-promotion.controller.ts": {
+    "mtime": 1778953340.098257,
+    "ast_hash": "47c0469d886ab5465e399672e66f2a62",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-promotions/stock-promotion-usage.model.ts": {
+    "mtime": 1778953280.901058,
+    "ast_hash": "205851156a052ee3fe3214efc40b50e5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-promotions/stock-promotion.validator.ts": {
+    "mtime": 1778953281.2530642,
+    "ast_hash": "8d411a51b87ea2a10a6f1990f593dd74",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-promotions/stock-promotion.model.ts": {
+    "mtime": 1778953280.5610518,
+    "ast_hash": "e17fca689395771adf7c04a8867998de",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-promotions/stock-promotion.routes.ts": {
+    "mtime": 1778953340.4302645,
+    "ast_hash": "fbdcbc3f5b2fd7922b8096352819e7c6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-promotions/stock-promotion.service.ts": {
+    "mtime": 1779438170.6996603,
+    "ast_hash": "255625fb769419a51305257f459ea028",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/pricing/pricing-simulation.controller.ts": {
+    "mtime": 1778954589.1973162,
+    "ast_hash": "f6940f9705979cde955c31520a009ec7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/pricing/pricing-simulation.routes.ts": {
+    "mtime": 1778954589.4133189,
+    "ast_hash": "80d74bd698f6d18cc8bb0ce84692480b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/pricing/pricing.service.ts": {
+    "mtime": 1779448966.3647413,
+    "ast_hash": "66389aab80f9cb425e15fcf356053d02",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/pricing/pricing-simulation.validator.ts": {
+    "mtime": 1778954588.9733133,
+    "ast_hash": "d1a54050aff008733220952ecb47427f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-requests/payment-request.routes.ts": {
+    "mtime": 1779659359.805831,
+    "ast_hash": "a0413ee90a68eb402569867457efc2a2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-requests/payment-request.controller.ts": {
+    "mtime": 1779659814.4707792,
+    "ast_hash": "33657ee2f85f882435f2e0a4bb44d623",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-requests/payment-request.model.ts": {
+    "mtime": 1779659335.870145,
+    "ast_hash": "03a97177eaea7574c14d2487e0b6beda",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-requests/payment-request.validator.ts": {
+    "mtime": 1779660844.068736,
+    "ast_hash": "5c46d9dac6b2a09be3eaf01f64b3faf5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/payment-requests/payment-request.service.ts": {
+    "mtime": 1779659771.4708896,
+    "ast_hash": "c68f3ddd10734431b4e0b0bcf7a78983",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-payment-gateways/settings-payment-gateway.controller.ts": {
+    "mtime": 1778934338.9877598,
+    "ast_hash": "dd701991e2d296e20fadc7528b021238",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-payment-gateways/settings-payment-gateway.validator.ts": {
+    "mtime": 1778934744.0565264,
+    "ast_hash": "7c85c4ff7caba833dce42cfef885c2a2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-payment-gateways/settings-payment-gateway.model.ts": {
+    "mtime": 1778934786.788613,
+    "ast_hash": "61d4564bd2b9002f7e4e24700b421004",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-payment-gateways/settings-payment-gateway.service.ts": {
+    "mtime": 1778934476.6080067,
+    "ast_hash": "0165a55c58f954b876b51a5f70f116ff",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-payment-gateways/settings-payment-gateway.routes.ts": {
+    "mtime": 1778934323.835734,
+    "ast_hash": "97ed3f2c275dc2423bceb4c8ad64a9f9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-categories/stock-category.validator.ts": {
+    "mtime": 1779531623.4466841,
+    "ast_hash": "7d6b7166355f18b5f975f7e1328ca82c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-categories/stock-category.model.ts": {
+    "mtime": 1778829159.4887896,
+    "ast_hash": "f5a55052e5201ab1d099da385b01b691",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-categories/stock-category.service.ts": {
+    "mtime": 1779531623.8386762,
+    "ast_hash": "624a66e12d78351d09b6fef7639b514d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-categories/stock-category.routes.ts": {
+    "mtime": 1779531096.6048348,
+    "ast_hash": "fb0ab5c5ea96c07b407ad6582ba075cd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-categories/stock-category.controller.ts": {
+    "mtime": 1778829160.7767947,
+    "ast_hash": "c3bbbdbec6728dfc09477fd5a55f23a7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/permissions/permissions.controller.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "cc363e3111afb1f38d9cfdc79274db4e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/permissions/permission.model.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "d7299e95e7d9c8be228df4449b0ad730",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/permissions/permissions.routes.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "bb4bc892e9b8ecee880493a46315f1a7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/permissions/permissions.service.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "605b0d43c00221ca99d759cea4ec7a31",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/problem-reports/problem-report.controller.ts": {
+    "mtime": 1779787403.4822466,
+    "ast_hash": "484b07667fc38bb8a304893dd94d0d25",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/problem-reports/problem-report.service.ts": {
+    "mtime": 1779787383.9506478,
+    "ast_hash": "7510577d8c51a7073f0221fe2bed450d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/problem-reports/problem-report.routes.ts": {
+    "mtime": 1779787417.7219543,
+    "ast_hash": "78e9713862943f9dfdb9aec7425b8358",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/problem-reports/problem-report.model.ts": {
+    "mtime": 1779787293.7325091,
+    "ast_hash": "afc932aaf813e3040d8750c73d215190",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/problem-reports/problem-report.validator.ts": {
+    "mtime": 1779788791.097387,
+    "ast_hash": "22337517d2bece1a56bb615cfcca9e21",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/uploads/upload.model.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "d42d13d4954c91dc5c3b0ee650a7a742",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/uploads/upload.routes.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "402e1dd1979014cd5cdf608337e316fe",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/uploads/upload.service.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "38b5e5fe1b74b35d76d7783ee18a3d41",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/uploads/upload.controller.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "eaf1ab7b5b66186e87a546da0a026f27",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/mail.service.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "acb2dd73bd2679555f492561f94c388a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/admin-invitation.template.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "07a552137e64e162f32219c37ff86779",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/welcome.template.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "5d2fb3f2313cd71494f295ac19544886",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/login-new-device.template.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "8e58f71de146bc6906963eb8891e574e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/template.utils.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "8cc46a97070193df5e0594c442bb6543",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/security-alert.template.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "094fe1be8f47b8f7e4102c3cdb1a7f32",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/verify-email.template.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "0471ec370be7c78b07078ead71479006",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/mail/templates/account-locked.template.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "cca4219810ce6e9cf4255e9ff9123c40",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/roles/roles.controller.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "38af317d456cf6e7ff9bec7e5d823eec",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/roles/roles.validator.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "8629882b0148199e9f3fe3ac4f2a17b3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/roles/roles.routes.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "39f2973696bfb0aaeb3eff380e209418",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/roles/roles.service.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "a897afb395edfeedfc80296a5e7e2a62",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/roles/role.model.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "cf2324a26d0b5eab608171194c3a9e71",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse.routes.ts": {
+    "mtime": 1778947140.2144427,
+    "ast_hash": "3c1fafee921a715d81ccbcb4be369b42",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse.service.ts": {
+    "mtime": 1779438266.9078646,
+    "ast_hash": "01927c76c4e96c535b9f21170e4aae31",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse.validator.ts": {
+    "mtime": 1778947900.1278212,
+    "ast_hash": "1a8d486aab4ff690a8939108a8ea255f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse-item.model.ts": {
+    "mtime": 1778946928.7232003,
+    "ast_hash": "66c2a1ee6964c90e635e0b69ee25eaf5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse.controller.ts": {
+    "mtime": 1778947121.8302667,
+    "ast_hash": "e16eb221b774ea2a2694463f51f8fe1a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse-movement.model.ts": {
+    "mtime": 1778946940.9954805,
+    "ast_hash": "8a4a3eb95b38a8b0deaa6ea8d665d969",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-warehouses/stock-warehouse.model.ts": {
+    "mtime": 1778946912.2147994,
+    "ast_hash": "a7ffc7e1a3f89b532ef3e06e9c34f4bd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/auth.routes.ts": {
+    "mtime": 1778956385.4035997,
+    "ast_hash": "c67d295ba9ec3ea85619a5c3b02fb04e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/auth.controller.ts": {
+    "mtime": 1779528467.8325267,
+    "ast_hash": "197557b512ed507cb1ba91dc522e73f7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/auth.types.ts": {
+    "mtime": 1778956336.5031483,
+    "ast_hash": "4288c0ac0d180625b21d149dc12847db",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/auth.service.ts": {
+    "mtime": 1779657642.1158512,
+    "ast_hash": "d080de2820f4f16fc2919306ce93ebf7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/totp.service.ts": {
+    "mtime": 1778956276.8106089,
+    "ast_hash": "1493c14f32f152fc4df7412ef87a2931",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/session.model.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "48320da369f59e61a95110f5afddce14",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/auth/auth.validator.ts": {
+    "mtime": 1778956336.8671515,
+    "ast_hash": "11e773e546f3910fe79b3da363dca283",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-service-groups/stock-service-group.validator.ts": {
+    "mtime": 1778930227.5296142,
+    "ast_hash": "86a9e3f12c49e6bf1d45a7bd0e1865e7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-service-groups/stock-service-group.controller.ts": {
+    "mtime": 1778930248.285683,
+    "ast_hash": "05224bf2437b43373b9fe5907f293cbb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-service-groups/stock-service-group.service.ts": {
+    "mtime": 1779394283.0383573,
+    "ast_hash": "81f2e6a27e7e11961058a9a5f2f7c125",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-service-groups/stock-service-group.routes.ts": {
+    "mtime": 1778930257.4057133,
+    "ast_hash": "34330b36eb82b83cb7fffedec592adf0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-service-groups/stock-service-group.model.ts": {
+    "mtime": 1778937802.624736,
+    "ast_hash": "b314dcefc66fbaccbaa46770a3bcc873",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/i18n/i18n.routes.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "719e86929cf937c23d1efcd56a4bdf13",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/i18n/i18n.service.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "5c50ac1089d1af3b6faa9ce5a913d65b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/i18n/i18n.controller.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "e32bc875189e250ae342e1854e330a21",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/orders/order.model.ts": {
+    "mtime": 1779461239.9701219,
+    "ast_hash": "87c4187dda72b6cfeef011daca66267f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/orders/order.routes.ts": {
+    "mtime": 1779458498.7192714,
+    "ast_hash": "200467df1431a555bde42470fb72fcb1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/orders/order.validator.ts": {
+    "mtime": 1779458483.8592126,
+    "ast_hash": "76b34d569e52f52b356dc78c3e2a3e9a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/orders/order.service.ts": {
+    "mtime": 1779786503.1806347,
+    "ast_hash": "430f9a823d57394b8400d0d4c1d52a1d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/orders/order.controller.ts": {
+    "mtime": 1779458491.0152411,
+    "ast_hash": "e0096b401bc7db18a4c31b22afd5070d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin/admin.types.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "f52f5f89e6957a2c184c06613567489b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin/admin.controller.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "27116fd0c667018895ee30ee48e2aac4",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin/admin.service.ts": {
+    "mtime": 1779566786.8357282,
+    "ast_hash": "45967117cce81d383d622ace8f97d0ef",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin/setting.model.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "d7423a8eb1e1dbd816e78e1064e7b8d2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/admin/admin.routes.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "f50ebd538a689d9f7651ccb5286497a1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product.service.ts": {
+    "mtime": 1779532253.063128,
+    "ast_hash": "86e05463a6997c2a237ed83e7496ff74",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product-api-connection.model.ts": {
+    "mtime": 1779308940.9825602,
+    "ast_hash": "4cb1d9659c804b7b9a5ec18e660d9dcc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product-api-connection.service.ts": {
+    "mtime": 1779459834.9478152,
+    "ast_hash": "88beb31e04377bcf7efdd8b57f030d9d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product.validator.ts": {
+    "mtime": 1779532252.7271302,
+    "ast_hash": "532646da2f3c64dba716fbce4fd51370",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product.model.ts": {
+    "mtime": 1779395157.5533845,
+    "ast_hash": "b4c665167d4638a093c8f9b9876474d5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product.routes.ts": {
+    "mtime": 1779309444.0825658,
+    "ast_hash": "902b6ac6c221715f1babc0848d42cb13",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-products/stock-product.controller.ts": {
+    "mtime": 1779309058.6223488,
+    "ast_hash": "9ba69dd7e9a8261485c76b3c25122a83",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/shop/shop.validator.ts": {
+    "mtime": 1779751915.9965396,
+    "ast_hash": "6dd3d38ec5fc8a220ef061312acc589d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/shop/shop.service.ts": {
+    "mtime": 1779734506.2961094,
+    "ast_hash": "cc20379bbb4f7b4ce6ec017f4f86c8fb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/shop/shop.routes.ts": {
+    "mtime": 1779786517.5781515,
+    "ast_hash": "d2c17327a8ad628758c79724a1605694",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/shop/shop.controller.ts": {
+    "mtime": 1779786510.7873242,
+    "ast_hash": "ae99c12b078425838754ce716830a0b5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-requirements/stock-product-requirement.model.ts": {
+    "mtime": 1778920117.6850443,
+    "ast_hash": "16ae70183b58dc5a4d355ee5e71f8b5c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-requirements/stock-product-requirement.validator.ts": {
+    "mtime": 1778920118.113037,
+    "ast_hash": "a8dd89179a5403875b056d271bb7b3a5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-requirements/stock-product-requirement.controller.ts": {
+    "mtime": 1778920118.889024,
+    "ast_hash": "ae3d4fd4d177d0b83ee659d610b4e743",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-requirements/stock-product-requirement.routes.ts": {
+    "mtime": 1778920119.2250183,
+    "ast_hash": "e326acc5b59eb165d4b19d73b68ca8e1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/stock-product-requirements/stock-product-requirement.service.ts": {
+    "mtime": 1778920118.4890308,
+    "ast_hash": "7c9543bd97e28c2c74f5d5ec13355753",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/settings-api-sync.service.ts": {
+    "mtime": 1779222247.8140748,
+    "ast_hash": "e4ae70d1dfbbdc8438f4a2cd28a7ea86",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/settings-api.controller.ts": {
+    "mtime": 1779143144.8682697,
+    "ast_hash": "f5bf85a461428d2ae59c100376107333",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/settings-api.service.ts": {
+    "mtime": 1779222259.5264719,
+    "ast_hash": "015e2f1790cb50f2d03b406d3ff2f2b8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/settings-api.model.ts": {
+    "mtime": 1779143108.8121808,
+    "ast_hash": "57c5a63e73b88101012436aad3544ddc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/settings-api.routes.ts": {
+    "mtime": 1779143145.2442708,
+    "ast_hash": "1327d641cbb4e3865bbdef99070039ef",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/settings-api.validator.ts": {
+    "mtime": 1779050382.8017466,
+    "ast_hash": "70bf13031761a00b8aee7871888ca09f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/providers/gift-card-providers-2.provider.ts": {
+    "mtime": 1779567514.762106,
+    "ast_hash": "38efddb919d16288d948350e697f4b66",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/providers/social-media-service-providers.provider.ts": {
+    "mtime": 1779143109.5001824,
+    "ast_hash": "e63265e7807810f7853c401c0ffe492f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/providers/temporary-number-coding-sites.provider.ts": {
+    "mtime": 1779224090.4735372,
+    "ast_hash": "54004e14f94da9f4c2e3cfa2c5ab40be",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-apis/providers/gift-card-providers.provider.ts": {
+    "mtime": 1779044478.6733239,
+    "ast_hash": "d44e88b615d668df4d099b7e5ba33cc2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-app/settings-app.validator.ts": {
+    "mtime": 1779402229.7070034,
+    "ast_hash": "dd9fd3faf910657a3520e536995e4d87",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-app/settings-app.routes.ts": {
+    "mtime": 1779402272.6868904,
+    "ast_hash": "98f077a32418b3604e8cc210229782e5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-app/settings-app.service.ts": {
+    "mtime": 1779402252.934942,
+    "ast_hash": "c8fe95ab3d41514205662a9d4324e579",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-app/settings-app.controller.ts": {
+    "mtime": 1779402260.9709208,
+    "ast_hash": "b2a0a8dde83ab106b9f5a6c2686edae9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/modules/settings-app/settings-app.model.ts": {
+    "mtime": 1779402223.9990187,
+    "ast_hash": "0aedbc975646d8b190afefb09e78ae2f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/env.config.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "9f0008d5ebc9a3e8f3c159ff23100352",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/i18n.config.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "4f8eecf622fa6b0153c7b87d9107d4d6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/cloudinary.config.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "8b0b59895b1f189c80b8e49d4dfaea77",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/swagger.config.ts": {
+    "mtime": 1779402541.570241,
+    "ast_hash": "d06baabf10a00af7c905581db5170928",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/database.config.ts": {
+    "mtime": 1778919220.8604949,
+    "ast_hash": "857b2bed80c9f6561ab882c77960c228",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/socket.config.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "a9df369ffcb3cc857b71e1d05a676c7d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/security.config.ts": {
+    "mtime": 1779447459.7230363,
+    "ast_hash": "702442d8886618d03bfa06e4767f0548",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/mail.config.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "5cab199e2874069cf7b16d0bb240b088",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/config/redis.config.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "4683df473336c2985e28c31948e07ed9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/queues/cleanup.queue.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "f5d43da51d5606780ed65f85403f4dbe",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/queues/email.queue.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "5698e2181862683e1f7a9048d4066d82",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/queues/index.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "4b211e328a53ab9e1b69e62c1a0c0f3e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/setup.ts": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "688e7d7975465b40e960e4ce1d792c50",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/security/csrf.middleware.test.ts": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "7369a0d70de2ec05c117ed75b200c041",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/security/upload.middleware.test.ts": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "11620ab0836d2409aba7ff538001481d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/security/mail-templates.test.ts": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "2107f33d32b94c7ab0971d744bcc7d1a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/contract/api-response-shape.test.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "3df4f648740633185225374384bc133f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/unit/pricing.test.ts": {
+    "mtime": 1779437529.0507522,
+    "ast_hash": "0c8c57923da2ba768277e21ab4c2a7a9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/integration/auth.test.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "2efcb99934e1c4b02d2b1e4639f724dd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/integration/business-modules.test.ts": {
+    "mtime": 1779568232.205914,
+    "ast_hash": "97df38be6e35d485a283e4cbb0f5b678",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/integration/i18n.test.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "040f8b0dcfd24f391a02336b668949af",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/tests/integration/authorization.test.ts": {
+    "mtime": 1778824102.630887,
+    "ast_hash": "dee2f7342471e391b813dad6c3c52c46",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/types/streamifier.d.ts": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "bf5b3fbec68b58245472465aa464c1f9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/permission.middleware.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "c9ce224b0c1851929d6b1fa9624f02dd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/validate.middleware.ts": {
+    "mtime": 1778919104.9675965,
+    "ast_hash": "54cefb68e904132f28d63870fbf19a5f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/language.middleware.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "38529f7500e793b4d19b88204e3a38e7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/rateLimit.middleware.ts": {
+    "mtime": 1778948417.6659455,
+    "ast_hash": "1108617664b6abe79264f59d440603de",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/error.middleware.ts": {
+    "mtime": 1779528460.88841,
+    "ast_hash": "b48199017bd95ed31012ea18ee50ed03",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/csrf.middleware.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "6f351c946380114310852363d52736df",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/auth.middleware.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "cc5c48b49e60a6fd954e099194761a50",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/role.middleware.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "ecfe4310aca27172ac13173c27782b14",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/transaction.middleware.ts": {
+    "mtime": 1778824102.6268868,
+    "ast_hash": "51103686fb4b3d4ce61f9673fc64224f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/middlewares/upload.middleware.ts": {
+    "mtime": 1778921458.234678,
+    "ast_hash": "535f7abf3263080e2257aef5d6a94202",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/helpers/pagination.helper.ts": {
+    "mtime": 1778826902.7294922,
+    "ast_hash": "224a2ff0bd195efcceb85de791d038eb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/helpers/query-filter.helper.ts": {
+    "mtime": 1779531095.2329097,
+    "ast_hash": "bb1567142c5580fc56cae3319abf9b22",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/responses/api.response.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "faad30fb2b67c7a0c30bd00fba79b931",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/utils/logger.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "972a805b2166572de73a2fd1d2b62145",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/utils/html.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "09232a6e08241503daf3ded06860b901",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/utils/asyncHandler.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "3a9d830ef81877fe60d6525884c30f9c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/types/external-modules.d.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "035096c96bfc3f7ba69e5a5eb25eb2c5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/types/express.d.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "4af7628e66fd5c3811aeac60ae058777",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/errors/AppError.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "8d502a6df222a7f9eae12c6eeff86d6b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/common/errors/HttpError.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "002a8e9f861f0fe81f46bd2c0fcb537f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/jobs/settings-api-sync.job.ts": {
+    "mtime": 1779222236.4216487,
+    "ast_hash": "7e6a09076cced15bb86659420764eb87",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/jobs/order-status-scheduler.job.ts": {
+    "mtime": 1779461659.554935,
+    "ast_hash": "b58ecc6ccc2da541d112ac7ac66fb53c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/jobs/order-status.events.ts": {
+    "mtime": 1779461607.7268238,
+    "ast_hash": "989d2b8e2d6387f95b3b43ad4eac6754",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/locales/en.json": {
+    "mtime": 1779787617.0498266,
+    "ast_hash": "1d26f78314bb87f7a441f07afffcc968",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/locales/fr.json": {
+    "mtime": 1779787617.0498266,
+    "ast_hash": "004eee661b1a64a3bd85ddfa000d7111",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/locales/ar.json": {
+    "mtime": 1779787617.0498266,
+    "ast_hash": "e48c2b656b8dcdcec0679651c1e72252",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/database/transaction.ts": {
+    "mtime": 1778824102.622887,
+    "ast_hash": "113c37825196b9a22255a1fbcdf3bd23",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/src/database/seeders/roles.seeder.ts": {
+    "mtime": 1778921476.3466876,
+    "ast_hash": "e30f28fce6f7b908b20d08554c5507bc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/storage/locales/languages.json": {
+    "mtime": 1779788177.1133533,
+    "ast_hash": "14c7117e4384af2d827a06d310521374",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/storage/locales/zz.json": {
+    "mtime": 1779788177.1093533,
+    "ast_hash": "b4dffd92d50cbac610a1d50058340047",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/postcss.config.js": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "c735540bb63936a123bc867d950c9f69",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/tailwind.config.ts": {
+    "mtime": 1778824974.7554274,
+    "ast_hash": "0d782c8e48b7e4625f10e2d700bf4dad",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/playwright.config.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "89838f7a7d45ba7868cbd6f43c40d8ef",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/tsconfig.json": {
+    "mtime": 1778954482.372026,
+    "ast_hash": "0dfc3df02ef2fff6e0ed931e5e5fcd67",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/tsconfig.node.json": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "df562a73dce2f53f022bc93ee20099c2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/package.json": {
+    "mtime": 1778917325.3861287,
+    "ast_hash": "d78bb064f13e7e084a1b52a4704a4ee8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/vite.config.ts": {
+    "mtime": 1778954482.8280313,
+    "ast_hash": "7d1ea1aec2a6b09ba801a8d795fa9dfc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/vitest.config.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "b181d8a0d9797a5bb8d5c0c970a3dc4b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/scripts/validate.sh": {
+    "mtime": 1779402619.410067,
+    "ast_hash": "55aca05b81c48475849b83c87e557844",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/scripts/generate-api-contract-types.mjs": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "8066b3411b46bde1d893401859cc10f2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/main.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "125ef4f830aa66a5c6ffd9293345876b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/App.tsx": {
+    "mtime": 1779402537.154251,
+    "ast_hash": "c91961645bbb8e719dd50325a8364c16",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/hooks/useDisclosure.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "16931773f8a7ceaa5076a26116b52384",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/hooks/useMediaQuery.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "e056eefc5882f2d6a8a5edee9eec69e1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/hooks/usePagination.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "4225fd711f2837abad859123c8e893c0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/hooks/useDebounce.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "932851d7bcc709212e8af288f518dc97",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/hooks/usePermissions.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "1b58dfc83536c82879bf38be80f22957",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/seo/JsonLd.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "1f35eec05aae050d7e6644107ca6f6ad",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/seo/SEO.tsx": {
+    "mtime": 1779402771.514537,
+    "ast_hash": "3e22c429d9ad1c69ffbe4d98b585999e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/EmptyState.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "44978b74c3b205f77e4cd9469b814257",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/ErrorState.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "9f8bc9646e6b1b59fb82dad29c91efb3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Textarea.tsx": {
+    "mtime": 1778825355.493897,
+    "ast_hash": "7cf6e88b797f7cd2d212f9eca7e36352",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Select.tsx": {
+    "mtime": 1778825355.181898,
+    "ast_hash": "e9c2784b4c59fdd5b4196c107d8988ac",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Radio.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "a14fb7e89002d0f84b2f5990b6db8eed",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Modal.tsx": {
+    "mtime": 1778826733.3880327,
+    "ast_hash": "092b5ef7a88dbaa697e8d7785f73be37",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Checkbox.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "129c5a969209611802a2e2f4bf557f52",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Tabs.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "dfed8ab0aefdd3bb135152f0ac460738",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Badge.tsx": {
+    "mtime": 1778825026.7432184,
+    "ast_hash": "81ded225bd32ef471d502e10ad6e4d30",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Input.tsx": {
+    "mtime": 1778825354.8418996,
+    "ast_hash": "361f360ef0c6e494b3d16fb029a78bbe",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Skeleton.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "ed9d7bcaaeb8bd7fc09c7f80f6e774b6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Dropdown.tsx": {
+    "mtime": 1779529291.4543297,
+    "ast_hash": "bad9f92a99af85bcee14a1f1d0ff1c2f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Table.tsx": {
+    "mtime": 1778829110.7525923,
+    "ast_hash": "67af31cae4932d9d5561d05ed803a0f9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Card.tsx": {
+    "mtime": 1778825307.45809,
+    "ast_hash": "cad897e060f82222055404cf065d64ce",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Button.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "6ac509425dce32c33c5f2e58923e21d8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Spinner.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "8b97e59ffe6817788affffb314072b1e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Alert.tsx": {
+    "mtime": 1778825026.2272205,
+    "ast_hash": "05891d48f83724d41419f4a766519f4b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/LanguageSwitcher.tsx": {
+    "mtime": 1779529304.00654,
+    "ast_hash": "440a7a21156e7f0356080dc5686b2ec9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Drawer.tsx": {
+    "mtime": 1778825356.4538932,
+    "ast_hash": "0df7d47c8b9f615b0212c94eecfbd687",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/PasswordInput.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "e4b4f7681775d2cfc98ab4d891dba69b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Switch.tsx": {
+    "mtime": 1778825519.4452374,
+    "ast_hash": "bc56190dec2ddf40410f234b2b7d60ca",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Pagination.tsx": {
+    "mtime": 1779529485.517582,
+    "ast_hash": "58d698f36c52f81766bc1c898ba843ab",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/ThemeToggle.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "5362460cba1fd6f33056256dc2e3b820",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/ui/Avatar.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "9461bb980b992b8956db33fae84cb900",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/forms/SearchInput.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "b9d4457a37dcbc66e52763b6cae8f2da",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/forms/FormField.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "93c413bbfb62fd0adfd4c9143d04c928",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/forms/FileUpload.tsx": {
+    "mtime": 1778934523.5120945,
+    "ast_hash": "72249f3275db0265265abe75fae89b8d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/forms/RichTextEditorField.tsx": {
+    "mtime": 1778917405.454661,
+    "ast_hash": "a3b0517195117bcacb46d255e15c1c9e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/layout/Header.tsx": {
+    "mtime": 1778825271.8342333,
+    "ast_hash": "e430dcb264bedf90fa579b9dd07b952a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/layout/Breadcrumb.tsx": {
+    "mtime": 1779529473.1413746,
+    "ast_hash": "3763d56fe4739c0d99e6b5d760f45d12",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/layout/Sidebar.tsx": {
+    "mtime": 1779787700.797917,
+    "ast_hash": "6bf875a107110552ac1666048fc1d89e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/components/layout/Footer.tsx": {
+    "mtime": 1779402603.582102,
+    "ast_hash": "12ffb98f23a6ca46e3230c4e1742fc9e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/utils.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "a40ab276f43a0e0a273926a9fa5055cc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/api/endpoints.ts": {
+    "mtime": 1779787698.5299203,
+    "ast_hash": "42d657cd8bd787a21bb1d21f7d9e2c72",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/api/api.client.ts": {
+    "mtime": 1779402624.3420563,
+    "ast_hash": "e9b1882754917c1d438b11def1bbadf2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/api/interceptors.ts": {
+    "mtime": 1779656527.7756312,
+    "ast_hash": "a98474ba217925f048cf22bdd4599d9c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/api/axios.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "666331caee375ff9a2f02ca3f89082ad",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/utils/format.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "d69a85aa82e7a2d200673d3b2388ac0c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/utils/date.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "1c782816c74596d703a33df2bf977300",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/utils/errors.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "faa0f2670fabd88ebe9cddc8548028b1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/socket/socket.events.ts": {
+    "mtime": 1779460413.477631,
+    "ast_hash": "f55fb94c2cd02d9e01613e4f96cba030",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/lib/socket/socket.client.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "927738c650c43fe8766efd46b1b6d755",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/types/auth.types.ts": {
+    "mtime": 1779655569.2364306,
+    "ast_hash": "148c80c36593d2c8989dd584ecec43ac",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/types/api.types.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "418ff1e40add66ebbc9760cdc34038c7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/types/common.types.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "453f28592bae5325847028ae2c583117",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/types/api-contract.types.ts": {
+    "mtime": 1779459901.072024,
+    "ast_hash": "36c2f108e13bc11da26fa01540408ac9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/stores/notification.store.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "0825da93390badcc8950798c516817d6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/stores/auth.store.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "8324f3211964388fb051fa7fbb780e7f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/constants/permissions.ts": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "e0afbcfb7f51754412cfce463c9bc3f2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/constants/countries.ts": {
+    "mtime": 1778936687.3308084,
+    "ast_hash": "69fa9d502a3e7d952446b697815a9396",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/constants/queryKeys.ts": {
+    "mtime": 1779787698.89392,
+    "ast_hash": "01b16aeb502c3057bfaf4e9ab457da62",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/shared/constants/routes.ts": {
+    "mtime": 1779653473.2726393,
+    "ast_hash": "85f51d448a0948b2fc3b5338a29f5c0a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/hooks/notifications.hooks.ts": {
+    "mtime": 1779528918.8320851,
+    "ast_hash": "e1d767be295441d4fd7e927493a6b9d2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/api/notifications.api.ts": {
+    "mtime": 1779461854.30737,
+    "ast_hash": "b164cf1d552e0e5552a2b050497e51fa",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/components/NotificationDropdown.tsx": {
+    "mtime": 1779653501.7401311,
+    "ast_hash": "3f62a5c0570bc986d7a659306b1e6d1e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/components/NotificationBell.tsx": {
+    "mtime": 1779529297.5464318,
+    "ast_hash": "b464a61c0f25b400cdf7f1f146838fc3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/components/NotificationItem.tsx": {
+    "mtime": 1779529176.668406,
+    "ast_hash": "c71ff5f44fe6d75d60ac6c426effd907",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/lib/notification-sounds.ts": {
+    "mtime": 1779789196.3629904,
+    "ast_hash": "4ef6efcd09ec60e0bbfdcf11c347f663",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/notifications/stores/notification.store.ts": {
+    "mtime": 1779461864.1513927,
+    "ast_hash": "e002368bc4d6508cabf8a55e0feeeee0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useUpdateProfile.ts": {
+    "mtime": 1779655587.4727473,
+    "ast_hash": "6708ed7599e355e0a8d7a497ab331e61",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useProfile.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "c48903ed7dd540af5406c52f4ea91d7f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useUploadAvatar.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "c24199295170f0f5095888a08a7df111",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useMySessions.ts": {
+    "mtime": 1779660554.2556553,
+    "ast_hash": "3a93d51b79d383738a493db825571884",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useDeleteAccount.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "1fef3a8b6ef9d9c67386e4f151932832",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useChangePassword.ts": {
+    "mtime": 1779655628.157465,
+    "ast_hash": "7f0f9e21ced24c303ff972ba307e933f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useRevokeSession.ts": {
+    "mtime": 1779655604.4410448,
+    "ast_hash": "25ff972e716bef59f86b54f6952b880b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/hooks/useRedeemPaymentCode.ts": {
+    "mtime": 1779659999.8185792,
+    "ast_hash": "c00dffd5cdac61353196d97eb352e1fb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/api/users.api.ts": {
+    "mtime": 1779660548.3116357,
+    "ast_hash": "79dbc300fd9071d91ab8352cd2a3cf22",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/components/SessionCard.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "6b863abc31b519a383cf68caf210c02d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/components/AvatarUploader.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "f4b68e91e096e7ddeb3d1499b1ea58bb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/users/schemas/users.schema.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "e08a98c140b8fecbf4d64bd73c05511a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/payments/payments.api.ts": {
+    "mtime": 1779659512.3042603,
+    "ast_hash": "30eb9734fdd77ece01d4a51c0b0274d3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/payments/payments.types.ts": {
+    "mtime": 1779659511.864264,
+    "ast_hash": "bb867c727df1943353d7e353906b6cf4",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/payments/payments.hooks.ts": {
+    "mtime": 1779659512.7482567,
+    "ast_hash": "65ae5afb7132a772a8e1ef37fcdc89e0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/settings/hooks/settings.hooks.ts": {
+    "mtime": 1779402337.5147254,
+    "ast_hash": "49bc596b7d525b81b937c4f8d4828a48",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/settings/api/settings.api.ts": {
+    "mtime": 1779402328.870747,
+    "ast_hash": "5091af52f6bf74dd91eeb918c75fb5fb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/settings/components/AppBrandingSync.tsx": {
+    "mtime": 1779402763.146469,
+    "ast_hash": "2fbc3f11690fd10bb157a8048ff24ce0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/settings/types/settings.types.ts": {
+    "mtime": 1779448864.0729218,
+    "ast_hash": "10f3d6c3d78ca8e4c842f7a354396318",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/settings/stores/branding.store.ts": {
+    "mtime": 1779402753.2663872,
+    "ast_hash": "ac8efb52f5ea484139d46096efd2eea8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-product-requirements.hooks.ts": {
+    "mtime": 1778920164.6482923,
+    "ast_hash": "c0406f3273e4f72f01a6f9bb41076b99",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-service-groups.hooks.ts": {
+    "mtime": 1778930304.849874,
+    "ast_hash": "985e05ea054fc3e440da58f32a324a62",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-warehouses.hooks.ts": {
+    "mtime": 1778947217.4030333,
+    "ast_hash": "30eedb7fb8c4500073a096420484320a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-product-groups.hooks.ts": {
+    "mtime": 1779531114.411879,
+    "ast_hash": "d9127a0ea7c8b2b93f8a0c20b85ac5f3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-products.hooks.ts": {
+    "mtime": 1779309183.23829,
+    "ast_hash": "e003bb4365d3961d3ed019ee3a08ad64",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-services.hooks.ts": {
+    "mtime": 1779531113.3599346,
+    "ast_hash": "97588a76b5b2007f036b28605366ce60",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-promotions.hooks.ts": {
+    "mtime": 1778953417.7464464,
+    "ast_hash": "516a0df362a4be678222a74d920f47e1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/hooks/stock-categories.hooks.ts": {
+    "mtime": 1779531624.2226684,
+    "ast_hash": "083b90c4530d9ff4b9b31d418808a9f3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-product-requirements.api.ts": {
+    "mtime": 1778920164.3602967,
+    "ast_hash": "c6d10aacfd3e8f1ba8348fc9dad135af",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-products.api.ts": {
+    "mtime": 1779395187.0774586,
+    "ast_hash": "37c367780eb72e12f96942eb62a1c68e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-product-groups.api.ts": {
+    "mtime": 1778921501.2827024,
+    "ast_hash": "0da9f9f5387a504da0e5c5b12233a1e2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-categories.api.ts": {
+    "mtime": 1778829186.3848963,
+    "ast_hash": "a6986d290e17ea6898d76e09febbd215",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-services.api.ts": {
+    "mtime": 1778829185.580893,
+    "ast_hash": "366d802f1e94dc62e8731f14862ccf5f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-service-groups.api.ts": {
+    "mtime": 1778930297.0378473,
+    "ast_hash": "1e230d8336f78ce75560e7a1708de7ce",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-warehouses.api.ts": {
+    "mtime": 1778947190.698854,
+    "ast_hash": "2f3cd95077e26d6b68598901407ab92c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/api/stock-promotions.api.ts": {
+    "mtime": 1778953417.4544518,
+    "ast_hash": "5d9b2603f6dc7b4bfd7761202c225f60",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-product.types.ts": {
+    "mtime": 1779532253.4391255,
+    "ast_hash": "941152c0ea6da35e7a9cc5e87c0bd647",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-warehouse.types.ts": {
+    "mtime": 1778947176.350747,
+    "ast_hash": "6ebf3bf98934f6decbca0cf9ebf440cd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-product-requirement.types.ts": {
+    "mtime": 1778920163.9643028,
+    "ast_hash": "16d00e450cbab7545c966300a8cf67d0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-promotion.types.ts": {
+    "mtime": 1778954611.2335956,
+    "ast_hash": "83af4a2117553ed03ab0e71d4d723cda",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-service.types.ts": {
+    "mtime": 1778829184.8928902,
+    "ast_hash": "1ebfeace033437dd8ddbec394daac806",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-category.types.ts": {
+    "mtime": 1778829185.2408917,
+    "ast_hash": "af524542e274646d0cb70e88828e6e10",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-product-group.types.ts": {
+    "mtime": 1778921500.938702,
+    "ast_hash": "b82274e5b9fd8f066d4e2fe07618e6a1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/stocks/types/stock-service-group.types.ts": {
+    "mtime": 1778930286.5378115,
+    "ast_hash": "6adb3a50204d9965f9b2f9387bc39405",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/clients/hooks/clients.hooks.ts": {
+    "mtime": 1779393483.5028937,
+    "ast_hash": "3b083085b1ff1e5aa1e6fc5f5642f0fd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/clients/api/clients.api.ts": {
+    "mtime": 1779393475.6628993,
+    "ast_hash": "db617ef50b40364ed7c66bd2e6a6af4c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/clients/types/client.types.ts": {
+    "mtime": 1779659997.8505793,
+    "ast_hash": "565a9d7787daf74d96a433955f9bb7d0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/problem-reports/problem-reports.types.ts": {
+    "mtime": 1779787773.3776636,
+    "ast_hash": "ee355573de3d460e1102e41db5e5004f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/problem-reports/problem-reports.api.ts": {
+    "mtime": 1779788894.014287,
+    "ast_hash": "317d50a25a9b5f9e290f2d075c70cefa",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/problem-reports/problem-reports.hooks.ts": {
+    "mtime": 1779789419.0382683,
+    "ast_hash": "ef92dc51fe9b4edb80f9b4cda28718e1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useVerifyEmail.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "b59b0ad5dec8a321f1f72dc9c34096c4",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useTwoFactorAuth.ts": {
+    "mtime": 1779653221.5931325,
+    "ast_hash": "b6bc665182fee8ddfeee35e99ee35fb7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useRegister.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "32692b1ac6f5f64eacd02ccadbabdfe9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useLogin.ts": {
+    "mtime": 1779653215.8132358,
+    "ast_hash": "e93f987848adb429534d6543703f302c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useMe.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "c7fb850569918f6fe9015acf91e95cd0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useResetPassword.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "a68e473739473c3e8f94d019a9ed503b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useForgotPassword.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "847cb5f36f8bcfcca68defb0f42d744b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/hooks/useLogout.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "d8f145512d83a5db8b2a3344907629a6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/api/auth.api.ts": {
+    "mtime": 1778956475.7564542,
+    "ast_hash": "2c001a4f83d3a49aac49cdee9ece461e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/types/auth.types.ts": {
+    "mtime": 1778956475.2724497,
+    "ast_hash": "63fd2d86234b1e6571f8eeee6891ba78",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/stores/auth.store.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "d4a2d5f2380701655f52ddd849169e64",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/auth/schemas/auth.schema.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "4aeb169226e1d75f51fcb002734c4fbf",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/i18n/hooks/languages.hooks.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "012eeeefd5e6ec227524e892140414cb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/i18n/api/languages.api.ts": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "07b875f1bd2131a74ea00ab9a806ff9d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/orders/hooks/orders.hooks.ts": {
+    "mtime": 1779458565.0035293,
+    "ast_hash": "e4e486c33b967403da75aed08e10b1f1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/orders/api/orders.api.ts": {
+    "mtime": 1779458555.9714947,
+    "ast_hash": "d4851aebf5b396be094501074989a059",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/orders/types/order.types.ts": {
+    "mtime": 1779458548.1314645,
+    "ast_hash": "0b87faafeb43ca219d75749239026ab2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useAdminUserById.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "a67aff394e66726cbe8dfe8fb5845c0e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useDashboard.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "d47a4076844f12f2212c691d095298aa",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useRoles.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "0bdffa44e9c2d2b7320aec3d7d822b62",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useSystemHealth.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "bacc5929962da9b166fc21e4a8555960",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useAdminUploads.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "f1bebd4dfdba9a8e27d547045b2de345",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useAuditLogs.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "b97507a184f072ca59abf16551cf9f76",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/hooks/useAdminUsers.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "388bbcf59adcc52629adc54f19896b86",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/api/admin.api.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "a3ba18ffdd4390dbecca2048e93bbba6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/components/StatsCard.tsx": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "f16db1944e8db79095a569520f40a477",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/components/HealthIndicator.tsx": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "0851decb8bb9bb3eb5ace6efdcdd72cc",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/components/JsonDiff.tsx": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "96a41216246a89534fb6bfae3dc0975f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/components/StatusBadge.tsx": {
+    "mtime": 1778825060.9830809,
+    "ast_hash": "3b69b13ccae5b7b3abc0e2a97bf5b892",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/admin/types/admin.types.ts": {
+    "mtime": 1779393145.947177,
+    "ast_hash": "0e410d75c96facfe54edc6abdcd031cd",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/routes.tsx": {
+    "mtime": 1779787699.8299184,
+    "ast_hash": "80c65c6a4914e718c735ec18ec022fb0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/hooks/shop.hooks.ts": {
+    "mtime": 1779786552.0361776,
+    "ast_hash": "2dacd71ee8ee55e4409c96c47358eea5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/api/shop.api.ts": {
+    "mtime": 1779786543.2337062,
+    "ast_hash": "9d3a3c71f4b2f3c2bf443eaa843d8c9d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/components/Icon.tsx": {
+    "mtime": 1779568813.7594104,
+    "ast_hash": "179a13fe7775fb5a82ff87789ab6dcb0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/components/primitives.tsx": {
+    "mtime": 1779568879.8205562,
+    "ast_hash": "bec35ae1b156abb786dfe2ea5f1878a9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/TopupPage.tsx": {
+    "mtime": 1779569506.3821707,
+    "ast_hash": "2c921b532e90289c2acf123df1bd146d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/LandingPage.tsx": {
+    "mtime": 1779652526.6095426,
+    "ast_hash": "6d7201df4d6b2cb6fb9c354b75adf199",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/ProfilePage.tsx": {
+    "mtime": 1779656310.7309992,
+    "ast_hash": "8c63b2664565f47225624904c94cf03e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/OrdersPage.tsx": {
+    "mtime": 1779790061.9773164,
+    "ast_hash": "29650fa8bd1f3d6a805c090b56364785",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/BillsPage.tsx": {
+    "mtime": 1779569544.0580792,
+    "ast_hash": "7ebbbbc420928f624fd186792119128f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/OrderDetailPage.tsx": {
+    "mtime": 1779786825.9489598,
+    "ast_hash": "ce70eabbbb5e78e665a0757057f13047",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/SupportDetailPage.tsx": {
+    "mtime": 1779787996.727682,
+    "ast_hash": "fd8beee2fd22dd435b1cc843b1e99bc9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/SmmPage.tsx": {
+    "mtime": 1779731893.1693883,
+    "ast_hash": "8e1d3625d5dbeb0735ee25a56ed92558",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/AuthPage.tsx": {
+    "mtime": 1779652680.9827847,
+    "ast_hash": "de8adbe76d4ae84349334b8f9a9f086b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/SupportPage.tsx": {
+    "mtime": 1779789828.3794332,
+    "ast_hash": "004312e052a8d9a7411e094726848ab1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/GiftCardsPage.tsx": {
+    "mtime": 1779751767.6453545,
+    "ast_hash": "a4f1c76e847b81e87348a171af3e5f19",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/WalletPage.tsx": {
+    "mtime": 1779660560.4876761,
+    "ast_hash": "9ba2e5598ffc6fa3ad01a17b552cc577",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/DashboardPage.tsx": {
+    "mtime": 1779785677.2823234,
+    "ast_hash": "6a007a3f4e8a316105ecca6b8f16b6a1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/ProductPage.tsx": {
+    "mtime": 1779785452.8613744,
+    "ast_hash": "6b35f5572bd1cc204a1afc88ccfba144",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/SupportCreatePage.tsx": {
+    "mtime": 1779788539.2290194,
+    "ast_hash": "43e54087f040de3852021059f27bf8e2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/pages/NumbersPage.tsx": {
+    "mtime": 1779733375.5247726,
+    "ast_hash": "2df20d2440a24abeb4c7cfacf164738a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/utils/shop-format.ts": {
+    "mtime": 1779652041.7103066,
+    "ast_hash": "0772f41ad5324b3df81023e0fae1ca85",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/types/shop.types.ts": {
+    "mtime": 1779751961.5462723,
+    "ast_hash": "3459b3b1196037b7c3c36efb3a223d88",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/data/catalog.ts": {
+    "mtime": 1779791685.4516966,
+    "ast_hash": "c579f84027d296b0a07e0af8eec1f90f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/features/shop/layouts/ShopLayout.tsx": {
+    "mtime": 1779791685.8236926,
+    "ast_hash": "c06a74bab1736e483fabc950e7d7519c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/index.tsx": {
+    "mtime": 1779653463.6888103,
+    "ast_hash": "85271f8eb5ca60a45d5801ed2910c44a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/auth.routes.tsx": {
+    "mtime": 1779653456.9649305,
+    "ast_hash": "e5fdd34d52916f292a689d2ccbd4a1a3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/public.routes.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "0141c91a7906a768980d0795fdf1ceea",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/admin.routes.tsx": {
+    "mtime": 1779787700.2779179,
+    "ast_hash": "8efd0b4837736017d246a0efd43b1cf8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/ProtectedRoute.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "7a8700f9c67c27ef6bf2cc9f5d86a606",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/private.routes.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "5d8e8fa0f9a752308f12506dbda29839",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/components/PermissionRoute.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "68abf16201fd5a8b83a5bc0a92a72cb7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/components/ProtectedRoute.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "effe34bc7c88dc9be8a777b5ac5523d4",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/routes/components/RouteErrorBoundary.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "a35467246c0e3390edde22fd7bd3f2b1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/user/ProfilePage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "ff011abe338262351fb7c3ee23a9b1de",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/user/NotificationsPage.tsx": {
+    "mtime": 1778825308.0420878,
+    "ast_hash": "5f8ee5032036939ab3273a3eb0bba3ab",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/user/SettingsPage.tsx": {
+    "mtime": 1778956704.3867097,
+    "ast_hash": "349279c1262de13176fb2da207d5d704",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/user/SessionsPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "3015e823887d25986bdd3ddcf0096435",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/user/DashboardPage.tsx": {
+    "mtime": 1778949102.9144256,
+    "ast_hash": "e77bdade30d09aedf79da137af8e9e3f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/public/ForbiddenPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "e69bda0954623f37be2bd34ac0a22ab8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/public/ContactPage.tsx": {
+    "mtime": 1778825519.041239,
+    "ast_hash": "bed6266739146bb3052066b25e72100e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/public/ServerErrorPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "f62cc6024d90cf66a3fc7ab68801491e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/public/AboutPage.tsx": {
+    "mtime": 1778825027.579215,
+    "ast_hash": "855dc72fd6fcc7e84c8e136f0b67514a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/public/NotFoundPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "b49f619840fb2540e3381117d35ba700",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/public/HomePage.tsx": {
+    "mtime": 1779651085.63823,
+    "ast_hash": "f813661979d0de4742535c66d0ab913a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/auth/RegisterPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "1fb230013a1a6267a2e68fe0ba37a843",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/auth/LoginPage.tsx": {
+    "mtime": 1778956562.9253001,
+    "ast_hash": "1d0e3e2165f0569903ab67bc8b7abcbb",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/auth/ForgotPasswordPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "028042e691b67b48c23ecacef0836b95",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/auth/VerifyEmailPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "f31c97c0e5f772ad8fb4fbcbf45df1a6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/auth/ResetPasswordPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "11f4a994c6ea715f09d304b2d6bf52ae",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockServicesPage.tsx": {
+    "mtime": 1779531150.2660513,
+    "ast_hash": "57ea0d5e2fe1aa0c9d3c52f2294a4d6c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockPromotionsPage.tsx": {
+    "mtime": 1778954611.4455981,
+    "ast_hash": "b01c5f48e407a9e9178e295b8e5583ea",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockCategoriesPage.tsx": {
+    "mtime": 1779531150.638033,
+    "ast_hash": "c359bf27e998d10b25621d8c640a2100",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ClientFinancialMovementsPage.tsx": {
+    "mtime": 1778946314.4486034,
+    "ast_hash": "4d766d93bf12f9e6d511bef9a97ac72c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ClientDetailPage.tsx": {
+    "mtime": 1778939321.115489,
+    "ast_hash": "f2145bc01a0e5da2a93696cf43f973c3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/LanguagesPage.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "6f4b1a5c9722a072c03d16969229ce9a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductsPage.tsx": {
+    "mtime": 1779307243.6693673,
+    "ast_hash": "48a146d9e3f341114a4ba2ecc4bc240f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsCurrenciesPage.tsx": {
+    "mtime": 1778828573.4818969,
+    "ast_hash": "de7378ae1fddbccb65ad46d5e720495c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsPaymentCodesPage.tsx": {
+    "mtime": 1778949112.2904243,
+    "ast_hash": "dc65268277b1c9a8ffac41b2a8396f30",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/UploadsPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "6f839813253f03d7303389182613b96e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/AuditLogsPage.tsx": {
+    "mtime": 1779566800.412015,
+    "ast_hash": "8e92d2711a322d1575200dfe829ba89e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/OrdersPage.tsx": {
+    "mtime": 1779458163.4862304,
+    "ast_hash": "0c9bfbd6b41ed519bceef162beb97828",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/PermissionsPage.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "a9e767cf39dccaf8ffec261f866676b6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductSpecialPricesPage.tsx": {
+    "mtime": 1778931340.861157,
+    "ast_hash": "ca6abd08798e4e1c5ad50d35d414526f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ClientSpecialPricesPage.tsx": {
+    "mtime": 1779394582.1028097,
+    "ast_hash": "0fc254d6ba1f5995c33cf8569c5c9812",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductCreatePage.tsx": {
+    "mtime": 1779307204.6850815,
+    "ast_hash": "20cf2cb614ff31b932ab3b2e44137c87",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ManagePaymentsPage.tsx": {
+    "mtime": 1779660851.0327644,
+    "ast_hash": "2e23dc555f415630c0e3a1ef208c37de",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockWarehousesPage.tsx": {
+    "mtime": 1779448277.4702897,
+    "ast_hash": "78f3ab65d69166222acb86ebe7aa3de6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ClientsPage.tsx": {
+    "mtime": 1778938560.9900975,
+    "ast_hash": "fc514321ea48d81c48df0fd2cbabdd92",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/OrderDetailPage.tsx": {
+    "mtime": 1779459484.4186966,
+    "ast_hash": "12a26bf546569842b6a4153f1fa3b059",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductImportPage.tsx": {
+    "mtime": 1779394759.8879046,
+    "ast_hash": "16068fac4eb3611b759c4e016ee8b729",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsGiftCardProvidersSimulationPage.tsx": {
+    "mtime": 1779047157.109633,
+    "ast_hash": "a8224d1f26d5670430827e13d3719ef9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsSocialMediaServiceProvidersSimulationPage.tsx": {
+    "mtime": 1779047889.7990618,
+    "ast_hash": "3f5b3d8eb79b112e56a32751299d834c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsApiSimulationPage.tsx": {
+    "mtime": 1779050477.9701216,
+    "ast_hash": "e31cd601e22d3768e11b3db284b9871c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ProblemReportsPage.tsx": {
+    "mtime": 1779789828.7634299,
+    "ast_hash": "e38b071e197a310e4331158c373e0c2b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ProblemReportDetailPage.tsx": {
+    "mtime": 1779787949.6882071,
+    "ast_hash": "4b071bff58a26bfa611d7ce4e70fc021",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockWarehouseItemsPage.tsx": {
+    "mtime": 1778947399.3197513,
+    "ast_hash": "60df85a33a4b4cde01fc4bd0e31d413a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockServiceGroupsPage.tsx": {
+    "mtime": 1778930334.2459753,
+    "ast_hash": "6d16edfa6ea04cc82c17daeaf23928ba",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ClientLevelsPage.tsx": {
+    "mtime": 1779394023.9945297,
+    "ast_hash": "2cb53b450058793550833902ad1bc591",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductRequirementsPage.tsx": {
+    "mtime": 1778920280.7227366,
+    "ast_hash": "325b0a98342b2d61243e9f1744028606",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/ClientSpecialPricesAllPage.tsx": {
+    "mtime": 1778954907.6896162,
+    "ast_hash": "5b3a0ab64f59b5e6756246d9e510c334",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsPaymentGatewaysPage.tsx": {
+    "mtime": 1778934787.188614,
+    "ast_hash": "a146ead64006c0e7109589534f22b515",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsGiftCardProviders2SimulationPage.tsx": {
+    "mtime": 1779047169.117657,
+    "ast_hash": "f0904f894373c01f71377666520b2ad8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/DashboardPage.tsx": {
+    "mtime": 1779143694.1336265,
+    "ast_hash": "08579ef2a39b31a441a91e1b9c388653",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/UsersPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "e766ed8cf2e9fd32076cdaddc203de15",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/OrderCreatePage.tsx": {
+    "mtime": 1779532528.2096648,
+    "ast_hash": "80c1cd3e96e011b4646c15d07f6b70e3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsTemporaryNumberCodingSitesSimulationPage.tsx": {
+    "mtime": 1779050468.3700845,
+    "ast_hash": "973e157b484929f4e375d88b601bd957",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsBrandingPage.tsx": {
+    "mtime": 1779402390.966594,
+    "ast_hash": "cb0c2edee1887d160e9d923ba4e8eec6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsApisPage.tsx": {
+    "mtime": 1779143184.568368,
+    "ast_hash": "a2dc11861cfb4c9ae53fbe1a192a5bd7",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/SettingsPricingSimulationPage.tsx": {
+    "mtime": 1778954731.1311734,
+    "ast_hash": "5b4768753abcf7b927377b15b255fc51",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductEditPage.tsx": {
+    "mtime": 1779395292.6056955,
+    "ast_hash": "325d39827d9b353a9868e1f4f874c20a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/UserDetailPage.tsx": {
+    "mtime": 1778824102.6468868,
+    "ast_hash": "c41ce18e4a826b0d803166ff99d5f9e5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/RolesPage.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "61f7b77aa5a58a6c258f5a997c8424d1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/pages/admin/StockProductGroupsPage.tsx": {
+    "mtime": 1779531151.0940104,
+    "ast_hash": "15636cc9c028c4fd4f623062b8c92e68",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/config/seo.config.ts": {
+    "mtime": 1779402533.16626,
+    "ast_hash": "352475ffe025ad5b45118eb81618e505",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/config/env.config.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "05cbf2937c663e906da4935af1ea947d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/config/i18n.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "d3a21c459bb5fb5f7d734eefb7ec6123",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/config/i18n.config.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "1d5eac22ef99e0442d31f1c5a6abecf6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/config/theme.config.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "906303f2fb19c8adf49538aab58ff478",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/App.tsx": {
+    "mtime": 1779402363.070662,
+    "ast_hash": "28e06918766ae3babd7c2e5dd63d801d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/providers/I18nProvider.tsx": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "302494dced889c8bac10ce039c01d9f1",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/providers/ThemeProvider.tsx": {
+    "mtime": 1778825549.7331157,
+    "ast_hash": "fd700cbb437b1dd1661e5dce2de1a5f4",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/providers/SocketProvider.tsx": {
+    "mtime": 1779789419.4302664,
+    "ast_hash": "aaa5129c62441a44ed862a5267a20308",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/providers/QueryProvider.tsx": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "31228d45272f55eb46de7c4ab9489287",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/providers/AuthProvider.tsx": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "f61fef7c7a418078da3ae088b3a54cea",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/stores/theme.store.ts": {
+    "mtime": 1778825501.7413087,
+    "ast_hash": "8800d8adeec6b683864924cf5c67c9aa",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/stores/language.store.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "0b5fc772b9f43a7c3443b80fa50af70a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/stores/ui.store.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "9af40a2f771cee3a0d1ab068672e7fe6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/app/stores/socket.store.ts": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "331b2b25479ad2619b99dffde2510c79",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/setup.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "959215723c358b03ee381087faf12817",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/hooks/useDebounce.test.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "b401bfe7d7e9e9b2d1627eac11e63fc2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/hooks/usePermissions.test.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "0184b0ae4d5dbb0d34f37b86e9a3e06e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/features/auth/LoginPage.test.tsx": {
+    "mtime": 1779402810.9428418,
+    "ast_hash": "9595466e3647c791281397249a855d4d",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/routes/ProtectedRoute.test.tsx": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "6125ab0666f330d51e578b8673015502",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/components/Button.test.tsx": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "9b13f64974e0c5114c170a0320ed9a64",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/components/Input.test.tsx": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "748ad9b8a3be915f4949a7005ad9a816",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/contract/api-endpoints.test.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "5ca30bdbf6e439674922777dd0447f53",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/stores/auth.store.test.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "266b5adc4ffd274fb8665d05e6aca5ed",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/e2e/auth.spec.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "e2f3e93befde5af9e8149daa8807416e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/e2e/language-management.spec.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "62a9949795cfb6f98620cc68112104a9",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/e2e/app-smoke.spec.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "928c562f0494a16ca0415619b0328a77",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/e2e/auth-flow.spec.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "57a9bdadd53fbd15dd67960ad02a53f3",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/i18n/locale-model.test.ts": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "55dda5eb0744ba01f39d442e0aede029",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/tests/i18n/I18nProvider.test.tsx": {
+    "mtime": 1778824102.6508868,
+    "ast_hash": "0d866097cb13529b87ce9528e362ff9c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/RootLayout.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "e869ddfb4f7f26d84724509cf74e5315",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/AuthLayout.tsx": {
+    "mtime": 1779652514.4337602,
+    "ast_hash": "ec50dd9a4f8ee6bbab05159235ca1cb5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/DashboardLayout.tsx": {
+    "mtime": 1778825270.626238,
+    "ast_hash": "06806c7ac9856ce10f2030bd616f9290",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/PublicLayout.tsx": {
+    "mtime": 1779651110.3816466,
+    "ast_hash": "d8f6b8e0689481f3008a737a90755ff2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/AdminLayout.tsx": {
+    "mtime": 1778825271.2422357,
+    "ast_hash": "4fff8dba41630fcbbc4b842d9aaac519",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/AdminLayout/AdminLayout.tsx": {
+    "mtime": 1779653496.8242188,
+    "ast_hash": "68a543603220aebafdb720a4656d3399",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/AuthLayout/AuthLayout.tsx": {
+    "mtime": 1778825308.742085,
+    "ast_hash": "afb3d368a6f405b231c7762582fb0078",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/RootLayout/RootLayout.tsx": {
+    "mtime": 1778824102.6428869,
+    "ast_hash": "69d4724a94feb95ae0fd1845853493b6",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/layouts/DashboardLayout/DashboardLayout.tsx": {
+    "mtime": 1778825270.9502368,
+    "ast_hash": "7ccbdb36288bdcb3f32e90edbb51a220",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/locales/en.json": {
+    "mtime": 1779791323.043792,
+    "ast_hash": "7fdc857bd329c2c4a64d6e7fb5225dd2",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/locales/fr.json": {
+    "mtime": 1779791323.051792,
+    "ast_hash": "f4fa627ee4a73dc5438447f4d071273f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/src/locales/ar.json": {
+    "mtime": 1779791323.047792,
+    "ast_hash": "7a09a03cdf9521cd3d1a9fbae59325a8",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/.claude/settings.local.json": {
+    "mtime": 1779568297.4629033,
+    "ast_hash": "3dad862feb00f3614d31efdda356da92",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/.codex/hooks.json": {
+    "mtime": 1778957626.174807,
+    "ast_hash": "d022891fa54677569ffd597d8775059a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/README_ZNET_API.md": {
+    "mtime": 1779567301.509875,
+    "ast_hash": "5d86bba1b69550c1da448d3e69c9d1ca",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/AGENTS.md": {
+    "mtime": 1778957591.894861,
+    "ast_hash": "a76384895d40fbb321a73881d2d8616f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/README-problem-reports.md": {
+    "mtime": 1779788361.1866682,
+    "ast_hash": "de255d12898834b62681684d66ab7b4f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/README-client-design.md": {
+    "mtime": 1779403498.957475,
+    "ast_hash": "9d6e690ff387f5302d2156319a193689",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/README2.md": {
+    "mtime": 1779437725.5754964,
+    "ast_hash": "ab24fc6f2de65c2b402a7fdc674f939c",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/ORDER_READINESS_REPORT.md": {
+    "mtime": 1779438389.800159,
+    "ast_hash": "3d28c9124ef0bc1cbd07412da2c3eb68",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/README.md": {
+    "mtime": 1779403183.0007424,
+    "ast_hash": "157aa7a5015ca8fabe21a69c531665ad",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/backend/docker-compose.yml": {
+    "mtime": 1778824102.618887,
+    "ast_hash": "4aab45a7f29a4cf7f5e5c0e9cf55a323",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/.github/workflows/ci.yml": {
+    "mtime": 1778824102.618887,
+    "ast_hash": "1ce5aa31b35c0497209c128665627939",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/production.md": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "3b1eb9b4e44a53419026f34d6485719b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/repository-layout.md": {
+    "mtime": 1778824102.634887,
+    "ast_hash": "e1e61faf4f88868c45e5397f1bf1817b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/gift-card-providers-2.md": {
+    "mtime": 1779137604.3621075,
+    "ast_hash": "cec8c122e2c4bd2f519d5275da7dd8d5",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/temporary-number-coding-sites.md": {
+    "mtime": 1779224178.8536382,
+    "ast_hash": "2bf0eac0794cf38c6dad9d77a870dfe0",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/product-sync-architecture.md": {
+    "mtime": 1779127187.9749396,
+    "ast_hash": "fb49425041366f27eabd5ce9fe7c0a92",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/special-programming.md": {
+    "mtime": 1779127189.942963,
+    "ast_hash": "81dba62de5582a7847ebdde3d5b9f470",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/renewable-number-coding-sites.md": {
+    "mtime": 1779224179.0816383,
+    "ast_hash": "e94a6c1dd284506d6818f1967d05a31f",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/social-media-service-providers.md": {
+    "mtime": 1779130969.9378586,
+    "ast_hash": "87ee0e523710826c67c0f53d1e6b0f9e",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/docs/apis/gift-card-providers.md": {
+    "mtime": 1779128132.9818466,
+    "ast_hash": "98b3b7c26886fe2f6016c40a4e92f74b",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/index.html": {
+    "mtime": 1779402520.6902885,
+    "ast_hash": "fc149d988ea4f76f23e4b612fbda3483",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/README.md": {
+    "mtime": 1779402641.9980175,
+    "ast_hash": "f6ea9b51f1cc51dfc7d2d45561e6178a",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/public/robots.txt": {
+    "mtime": 1778824102.638887,
+    "ast_hash": "0bb23fc855a9c0fb9d254d1c425fc326",
+    "semantic_hash": ""
+  },
+  "/home/ala/Desktop/newTafa3ol2/frontend/public/favicon.svg": {
+    "mtime": 1779402526.5222752,
+    "ast_hash": "0bc18944971b393652c94b2013f1bd99",
+    "semantic_hash": ""
+  }
+}

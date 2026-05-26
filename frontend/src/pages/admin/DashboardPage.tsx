@@ -28,7 +28,7 @@ export default function DashboardPage() {
   }, [setPageTitle, setBreadcrumbs, t]);
 
   const auditColumns = [
-    { key: 'actor', header: t('runtime.actor'), render: (log: any) => log.actorId.name },
+    { key: 'actor', header: t('runtime.actor'), render: (log: any) => log.actorId?.name ?? t('common.system') },
     { key: 'action', header: t('runtime.action'), render: (log: any) => <ActionBadge action={log.action} /> },
     { key: 'entity', header: t('runtime.entity') },
     { key: 'createdAt', header: t('runtime.time'), render: (log: any) => formatRelative(log.createdAt, language) },

@@ -14,6 +14,20 @@ export const loginSchema = z.object({
   password: z.string().min(1, 'Password is required'),
 });
 
+export const verifyTwoFactorLoginSchema = z.object({
+  twoFactorToken: z.string().min(1, 'Two-factor token is required'),
+  code: z.string().trim().regex(/^\d{6}$/, 'Two-factor code must be 6 digits'),
+});
+
+export const enableTwoFactorSchema = z.object({
+  code: z.string().trim().regex(/^\d{6}$/, 'Two-factor code must be 6 digits'),
+});
+
+export const disableTwoFactorSchema = z.object({
+  currentPassword: z.string().min(1, 'Current password is required'),
+  code: z.string().trim().regex(/^\d{6}$/, 'Two-factor code must be 6 digits'),
+});
+
 export const verifyEmailSchema = z.object({
   token: z.string().min(1, 'Token is required'),
 });

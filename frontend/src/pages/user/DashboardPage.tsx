@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Bell, CheckCircle2, Clock3, Settings, ShieldCheck, UserRound } from 'lucide-react';
+import { Bell, CheckCircle2, Clock3, KeyRound, Settings, ShieldCheck, UserRound, Wallet } from 'lucide-react';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useAuthStore } from '@/features/auth/stores/auth.store';
 import { useUnreadCount } from '@/features/notifications/hooks/notifications.hooks';
@@ -9,7 +9,11 @@ import { useProfile } from '@/features/users/hooks/useProfile';
 import { useMySessions } from '@/features/users/hooks/useMySessions';
 import { Card } from '@/shared/components/ui/Card';
 import { Badge } from '@/shared/components/ui/Badge';
+import { Button } from '@/shared/components/ui/Button';
+import { Input } from '@/shared/components/ui/Input';
+import { Modal } from '@/shared/components/ui/Modal';
 import { SEO } from '@/shared/components/seo/SEO';
+import { useRedeemPaymentCode } from '@/features/users/hooks/useRedeemPaymentCode';
 import { formatDate } from '@/shared/lib/utils/date';
 import { cn } from '@/shared/lib/utils';
 
@@ -17,6 +21,8 @@ export default function DashboardPage() {
   const { t } = useTranslation();
   const { setPageTitle, setBreadcrumbs } = useUIStore();
   const { user: authUser } = useAuthStore();
+  const [isRedeemOpen, setRedeemOpen] = useState(false);
+  const [paymentCode, setPaymentCode] = useState('');
   const { data: profileResponse } = useProfile();
   const { data: unreadResponse } = useUnreadCount();
   const { data: sessionsResponse } = useMySessions();
@@ -24,11 +30,22 @@ export default function DashboardPage() {
   const user = profileResponse?.data ?? authUser;
   const unreadCount = unreadResponse?.data.count ?? 0;
   const activeSessions = sessionsResponse?.data.filter((session) => session.isCurrent).length ?? 0;
+  const { mutate: redeemCode, isPending: isRedeeming } = useRedeemPaymentCode();
 
   useEffect(() => {
     setPageTitle(t('nav.dashboard'));
     setBreadcrumbs([{ label: t('nav.dashboard') }]);
   }, [setPageTitle, setBreadcrumbs, t]);
+
+  const submitRedeem = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    redeemCode(paymentCode, {
+      onSuccess: () => {
+        setPaymentCode('');
+        setRedeemOpen(false);
+      },
+    });
+  };
 
   return (
     <div className="space-y-8">
@@ -63,7 +80,20 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3">
+      <section className="grid gap-4 md:grid-cols-4">
+        <Card padding="lg">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-sm text-slate-500">{t('runtime.balance')}</p>
+              <p className="mt-2 text-3xl font-bold">${Number(user?.balance ?? 0).toFixed(2)}</p>
+            </div>
+            <Wallet className="text-primary" size={28} />
+          </div>
+          <Button type="button" size="sm" className="mt-4 w-full" onClick={() => setRedeemOpen(true)} leftIcon={<KeyRound size={16} />}>
+            {t('runtime.redeemPaymentCode')}
+          </Button>
+        </Card>
+
         <Card padding="lg">
           <div className="flex items-center justify-between">
             <div>
@@ -90,7 +120,7 @@ export default function DashboardPage() {
               <p className="text-sm text-slate-500">{t('runtime.accountStatus')}</p>
               <p className="mt-2 text-3xl font-bold capitalize">{user?.status ?? t('runtime.active')}</p>
             </div>
-            <CheckCircle2 className="text-blue-500" size={28} />
+            <CheckCircle2 className="text-accent" size={28} />
           </div>
         </Card>
       </section>
@@ -147,6 +177,15 @@ export default function DashboardPage() {
           </div>
         </Card>
       </section>
+
+      <Modal isOpen={isRedeemOpen} onClose={() => setRedeemOpen(false)} title={t('runtime.redeemPaymentCode')}>
+        <form onSubmit={submitRedeem} className="space-y-4">
+          <Input label={t('runtime.paymentCode')} value={paymentCode} onChange={(event) => setPaymentCode(event.target.value)} required />
+          <div className="flex justify-end">
+            <Button type="submit" isLoading={isRedeeming}>{t('common.submit')}</Button>
+          </div>
+        </form>
+      </Modal>
     </div>
   );
 }

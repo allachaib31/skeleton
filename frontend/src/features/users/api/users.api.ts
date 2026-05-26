@@ -2,10 +2,23 @@ import { api } from '@/shared/lib/api/axios';
 import { ApiResponse } from '@/shared/types/api.types';
 import { User, Session } from '@/shared/types/auth.types';
 import { API_ENDPOINTS } from '@/shared/lib/api/endpoints';
+import { ClientFinancialMovement, ClientLevelsResponse } from '@/features/clients/types/client.types';
+import { PaginationQuery } from '@/shared/types/api.types';
+
+export interface MyFinancialMovementsQuery extends PaginationQuery {
+  type?: 'DEPOSIT' | 'WITHDRAW';
+  excludeSource?: 'ADMIN' | 'PAYMENT_GATEWAY' | 'BANK' | 'PAYMENT_CODE' | 'ORDER';
+}
 
 export interface UpdateProfileRequest {
-  name: string;
-  phone?: string;
+  name?: string;
+  username?: string;
+  firstName?: string;
+  lastName?: string;
+  phoneNumber?: string;
+  countryCode?: string;
+  countryIso?: string;
+  countryFlag?: string;
 }
 
 export const getMe = async (): Promise<ApiResponse<User>> => {
@@ -37,7 +50,22 @@ export const getMySessions = async (): Promise<ApiResponse<Session[]>> => {
   return response.data;
 };
 
+export const getMyLevels = async (): Promise<ApiResponse<ClientLevelsResponse>> => {
+  const response = await api.get(API_ENDPOINTS.USERS.LEVELS);
+  return response.data;
+};
+
+export const getMyFinancialMovements = async (params: MyFinancialMovementsQuery): Promise<ApiResponse<ClientFinancialMovement[]>> => {
+  const response = await api.get(API_ENDPOINTS.USERS.FINANCIAL_MOVEMENTS, { params });
+  return response.data;
+};
+
 export const revokeSession = async (sessionId: string): Promise<ApiResponse<null>> => {
   const response = await api.delete(API_ENDPOINTS.USERS.SESSION_BY_ID(sessionId));
+  return response.data;
+};
+
+export const redeemPaymentCode = async (code: string): Promise<ApiResponse<{ amount: number; balance: number }>> => {
+  const response = await api.post(API_ENDPOINTS.PAYMENT_CODES.REDEEM, { code });
   return response.data;
 };

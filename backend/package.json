@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Production-ready backend skeleton",
+  "description": "tafa3olcard backend",
   "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon",
@@ -56,6 +56,7 @@
     "mongoose": "^9.6.2",
     "multer": "^2.1.1",
     "nodemailer": "^8.0.7",
+    "qrcode": "^1.5.4",
     "rate-limit-redis": "^5.0.0",
     "socket.io": "^4.8.3",
     "streamifier": "^0.1.1",

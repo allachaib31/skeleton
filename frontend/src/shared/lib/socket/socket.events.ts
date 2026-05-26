@@ -4,6 +4,7 @@ export const SOCKET_EVENTS = {
   USER_OFFLINE: 'user:offline',
   ADMIN_AUDIT_LOG: 'admin:audit-log',
   UPLOAD_COMPLETED: 'upload:completed',
+  ORDER_UPDATED: 'order:updated',
 } as const;
 
 export type SocketEvent = typeof SOCKET_EVENTS[keyof typeof SOCKET_EVENTS];

@@ -5,6 +5,11 @@ export interface LoginResponse {
   refreshExpiresAt: Date;
 }
 
+export interface TwoFactorRequiredResponse {
+  requiresTwoFactor: true;
+  twoFactorToken: string;
+}
+
 export interface AuthTokens {
   accessToken: string;
   refreshToken: string;

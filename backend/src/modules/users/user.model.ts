@@ -5,9 +5,24 @@ export interface IUser extends Document {
   email: string;
   password?: string;
   name?: string;
+  username?: string;
+  firstName?: string;
+  lastName?: string;
+  phoneNumber?: string;
+  countryCode?: string;
+  countryIso?: string;
+  countryFlag?: string;
   avatar?: string;
   role: mongoose.Types.ObjectId;
   status: 'active' | 'inactive' | 'banned' | 'pending_verification';
+  invitationCode?: string;
+  referralClientId?: mongoose.Types.ObjectId;
+  balance: number;
+  openCredit: number;
+  totalExpenses: number;
+  totalReferralWin: number;
+  isDeleted: boolean;
+  deletedAt?: Date;
   failedLoginAttempts: number;
   lockUntil?: Date;
   lastLoginAt?: Date;
@@ -17,6 +32,9 @@ export interface IUser extends Document {
   emailVerificationExpires?: Date;
   passwordResetToken?: string;
   passwordResetExpires?: Date;
+  twoFactorEnabled: boolean;
+  twoFactorSecret?: string;
+  twoFactorPendingSecret?: string;
   createdAt: Date;
   updatedAt: Date;
   
@@ -30,6 +48,13 @@ const userSchema = new Schema<IUser>({
   email: { type: String, required: true, unique: true, lowercase: true, trim: true },
   password: { type: String, select: false },
   name: { type: String },
+  username: { type: String, trim: true, unique: true, sparse: true },
+  firstName: { type: String, trim: true },
+  lastName: { type: String, trim: true },
+  phoneNumber: { type: String, trim: true },
+  countryCode: { type: String, trim: true },
+  countryIso: { type: String, trim: true, uppercase: true },
+  countryFlag: { type: String, trim: true },
   avatar: { type: String },
   role: { type: Schema.Types.ObjectId, ref: 'Role', required: true },
   status: { 
@@ -42,10 +67,21 @@ const userSchema = new Schema<IUser>({
   lastLoginAt: { type: Date },
   lastLoginIp: { type: String },
   isEmailVerified: { type: Boolean, default: false },
+  invitationCode: { type: String, unique: true, sparse: true },
+  referralClientId: { type: Schema.Types.ObjectId, ref: 'User' },
+  balance: { type: Number, default: 0 },
+  openCredit: { type: Number, default: 0 },
+  totalExpenses: { type: Number, default: 0, min: 0 },
+  totalReferralWin: { type: Number, default: 0, min: 0 },
+  isDeleted: { type: Boolean, default: false },
+  deletedAt: { type: Date },
   emailVerificationToken: { type: String },
   emailVerificationExpires: { type: Date },
   passwordResetToken: { type: String },
   passwordResetExpires: { type: Date },
+  twoFactorEnabled: { type: Boolean, default: false },
+  twoFactorSecret: { type: String, select: false },
+  twoFactorPendingSecret: { type: String, select: false },
 }, {
   timestamps: true,
 });
@@ -53,6 +89,9 @@ const userSchema = new Schema<IUser>({
 userSchema.index({ role: 1 });
 userSchema.index({ status: 1 });
 userSchema.index({ createdAt: -1 });
+userSchema.index({ referralClientId: 1 });
+userSchema.index({ isDeleted: 1 });
+userSchema.index({ twoFactorEnabled: 1 });
 
 // Pre-save hook to hash password
 userSchema.pre<IUser>('save', async function () {

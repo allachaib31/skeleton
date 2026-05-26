@@ -9,10 +9,11 @@ interface FileUploadProps {
   accept?: string;
   maxSize?: number; // in bytes
   onFile: (file: File) => void;
+  onClear?: () => void;
   preview?: boolean;
 }
 
-export function FileUpload({ accept, maxSize, onFile, preview = true }: FileUploadProps) {
+export function FileUpload({ accept, maxSize, onFile, onClear, preview = true }: FileUploadProps) {
   const { t } = useTranslation();
   const [dragActive, setDragActive] = useState(false);
   const [file, setFile] = useState<File | null>(null);
@@ -90,7 +91,7 @@ export function FileUpload({ accept, maxSize, onFile, preview = true }: FileUplo
           </div>
         </div>
       ) : (
-        <div className="relative flex items-center gap-4 p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900">
+        <div className="relative flex items-center gap-4 p-4 border border-white/10 rounded-xl bg-secondary">
           {previewUrl ? (
             <img src={previewUrl} alt={t('runtime.preview')} className="w-16 h-16 rounded object-cover" />
           ) : (
@@ -103,7 +104,8 @@ export function FileUpload({ accept, maxSize, onFile, preview = true }: FileUplo
             <p className="text-xs text-slate-500">{formatBytes(file.size)}</p>
           </div>
           <button 
-            onClick={() => { setFile(null); setPreviewUrl(null); }}
+            type="button"
+            onClick={() => { setFile(null); setPreviewUrl(null); onClear?.(); }}
             className="text-slate-400 hover:text-red-500"
           >
             <X size={20} />

@@ -1,5 +1,5 @@
 {
-  "watch": ["src"],
+  "watch": ["src", "../shared/pricing"],
   "ext": ".ts,.js",
   "ignore": [],
   "exec": "ts-node -r tsconfig-paths/register ./src/server.ts"

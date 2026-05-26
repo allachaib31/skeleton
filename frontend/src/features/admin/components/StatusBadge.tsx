@@ -16,9 +16,9 @@ export function StatusBadge({ status }: { status: UserStatus }) {
 
 export function RoleBadge({ role }: { role: string }) {
   const colors: Record<string, string> = {
-    SUPER_ADMIN: 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400',
+    SUPER_ADMIN: 'bg-primary/15 text-primary dark:bg-primary/20 dark:text-primary',
     ADMIN: 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400',
-    USER: 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400',
+    USER: 'bg-accent/10 text-accent dark:bg-accent/15 dark:text-accent',
   };
 
   return (

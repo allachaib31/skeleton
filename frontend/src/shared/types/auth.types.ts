@@ -17,9 +17,22 @@ export interface User {
   _id: string;
   name: string;
   email: string;
+  username?: string;
+  firstName?: string;
+  lastName?: string;
+  phoneNumber?: string;
+  countryCode?: string;
+  countryIso?: string;
+  countryFlag?: string;
   avatar?: string;
   role: Role;
   status: UserStatus;
+  balance?: number;
+  openCredit?: number;
+  totalExpenses?: number;
+  totalReferralWin?: number;
+  invitationCode?: string;
+  twoFactorEnabled?: boolean;
   isEmailVerified: boolean;
   createdAt: string;
 }
@@ -34,7 +47,9 @@ export interface DeviceInfo {
 
 export interface Session {
   _id: string;
+  id?: string;
   deviceInfo: DeviceInfo;
   createdAt: string;
+  expiresAt?: string;
   isCurrent: boolean;
 }

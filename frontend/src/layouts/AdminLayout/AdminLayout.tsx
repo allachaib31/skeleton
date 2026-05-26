@@ -1,11 +1,14 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { LayoutDashboard, Users, Shield, FileText, Upload, Settings, ChevronLeft, Globe2 } from 'lucide-react';
+import { LayoutDashboard, Users, Shield, FileText, Upload, Settings, ChevronLeft, ChevronRight, Globe2, Package } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
+import { useLanguageStore } from '@/app/stores/language.store';
 
 export function AdminLayout() {
   const { t } = useTranslation();
   const location = useLocation();
+  const { direction } = useLanguageStore();
+  const BackIcon = direction === 'rtl' ? ChevronRight : ChevronLeft;
 
   const adminNavItems = [
     { label: t('nav.dashboard'), path: '/admin/dashboard', icon: LayoutDashboard },
@@ -15,16 +18,18 @@ export function AdminLayout() {
     { label: t('admin.auditLogs'), path: '/admin/audit-logs', icon: FileText },
     { label: t('admin.uploads'), path: '/admin/uploads', icon: Upload },
     { label: t('admin.languages.title'), path: '/admin/languages', icon: Globe2 },
+    { label: t('stocks.categories.title'), path: '/admin/stocks/categories', icon: Package },
+    { label: t('stocks.services.title'), path: '/admin/stocks/services', icon: Package },
     { label: t('settings.title'), path: '/admin/settings', icon: Settings },
   ];
 
   return (
-    <div className="flex min-h-screen bg-slate-50 dark:bg-slate-950">
-      <aside className="w-64 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+    <div className="flex min-h-screen bg-background text-foreground">
+      <aside className="w-64 border-r border-white/10 bg-secondary">
         <div className="p-6 flex items-center justify-between">
           <h1 className="text-xl font-bold text-primary">{t('admin.panel')}</h1>
-          <Link to="/app/profile" className="text-slate-400 hover:text-primary transition-colors">
-            <ChevronLeft size={20} />
+          <Link to="/shop/dashboard" className="text-slate-400 hover:text-primary transition-colors">
+            <BackIcon size={20} />
           </Link>
         </div>
         <nav className="px-4 space-y-1">

@@ -19,7 +19,7 @@ api.interceptors.response.use(
       originalRequest._retry = true;
       // In a production app, you might try to refresh the token here
       // if using split access/refresh tokens.
-      // For this skeleton, we assume the backend handles httpOnly cookies.
+      // The backend handles httpOnly cookies.
     }
     
     return Promise.reject(error);

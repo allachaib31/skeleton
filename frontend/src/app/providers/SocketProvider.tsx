@@ -8,6 +8,7 @@ import { useAuthStore } from '@/features/auth/stores/auth.store';
 import { useSocketStore } from '@/app/stores/socket.store';
 import { useNotificationStore } from '@/features/notifications/stores/notification.store';
 import { queryKeys } from '@/shared/constants/queryKeys';
+import { playNotificationSound } from '@/features/notifications/lib/notification-sounds';
 
 interface SocketProviderProps {
   children: ReactNode;
@@ -17,7 +18,7 @@ export const SocketProvider = ({ children }: SocketProviderProps) => {
   const queryClient = useQueryClient();
   const { user, isAuthenticated } = useAuthStore();
   const { setConnected, addOnlineUser, removeOnlineUser } = useSocketStore();
-  const { addNotification, incrementUnreadCount } = useNotificationStore();
+  const { addNotification } = useNotificationStore();
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -32,7 +33,17 @@ export const SocketProvider = ({ children }: SocketProviderProps) => {
 
     const onNewNotification = (notif: any) => {
       addNotification(notif);
-      incrementUnreadCount();
+      playNotificationSound(notif);
+      queryClient.invalidateQueries({ queryKey: queryKeys.notifications.list });
+      queryClient.invalidateQueries({ queryKey: queryKeys.notifications.unreadCount });
+      if (notif?.type === 'problem_report') {
+        queryClient.invalidateQueries({ queryKey: queryKeys.problemReports.list });
+        if (notif.data?.reportId) queryClient.invalidateQueries({ queryKey: queryKeys.problemReports.byId(String(notif.data.reportId)) });
+        if (user?.role?.name === 'ADMIN' || user?.role?.name === 'SUPER_ADMIN') {
+          queryClient.invalidateQueries({ queryKey: queryKeys.admin.problemReports });
+          if (notif.data?.reportId) queryClient.invalidateQueries({ queryKey: [...queryKeys.admin.problemReports, String(notif.data.reportId)] });
+        }
+      }
       toast(notif.title, {
         description: notif.message,
         icon: <Bell size={18} className="text-primary" />,
@@ -48,6 +59,12 @@ export const SocketProvider = ({ children }: SocketProviderProps) => {
       }
     };
 
+    const onOrderUpdated = () => {
+      if (user?.role?.name === 'ADMIN' || user?.role?.name === 'SUPER_ADMIN') {
+        queryClient.invalidateQueries({ queryKey: queryKeys.admin.orders });
+      }
+    };
+
     socket.on('connect', onConnect);
     socket.on('disconnect', onDisconnect);
     socket.on('connect_error', onConnectError);
@@ -55,6 +72,7 @@ export const SocketProvider = ({ children }: SocketProviderProps) => {
     socket.on(SOCKET_EVENTS.USER_ONLINE, onUserOnline);
     socket.on(SOCKET_EVENTS.USER_OFFLINE, onUserOffline);
     socket.on(SOCKET_EVENTS.ADMIN_AUDIT_LOG, onAdminAuditLog);
+    socket.on(SOCKET_EVENTS.ORDER_UPDATED, onOrderUpdated);
 
     return () => {
       socket.off('connect', onConnect);
@@ -64,8 +82,9 @@ export const SocketProvider = ({ children }: SocketProviderProps) => {
       socket.off(SOCKET_EVENTS.USER_ONLINE, onUserOnline);
       socket.off(SOCKET_EVENTS.USER_OFFLINE, onUserOffline);
       socket.off(SOCKET_EVENTS.ADMIN_AUDIT_LOG, onAdminAuditLog);
+      socket.off(SOCKET_EVENTS.ORDER_UPDATED, onOrderUpdated);
     };
-  }, [isAuthenticated, user, queryClient, setConnected, addOnlineUser, removeOnlineUser, addNotification, incrementUnreadCount]);
+  }, [isAuthenticated, user, queryClient, setConnected, addOnlineUser, removeOnlineUser, addNotification]);
 
   return <>{children}</>;
 };

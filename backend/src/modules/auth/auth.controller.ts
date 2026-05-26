@@ -28,7 +28,14 @@ export class AuthController {
       userAgent: firstHeader(req.headers['user-agent'])
     };
 
-    const { user, accessToken, refreshToken, refreshExpiresAt } = await AuthService.login(req.body, deviceInfo);
+    const result = await AuthService.login(req.body, deviceInfo);
+
+    if ('requiresTwoFactor' in result) {
+      sendSuccess(res, result, translate('auth.two_factor_required', req.language));
+      return;
+    }
+
+    const { user, accessToken, refreshToken, refreshExpiresAt } = result;
 
     res.cookie('refreshToken', refreshToken, {
       ...refreshCookieBaseOptions,
@@ -36,6 +43,47 @@ export class AuthController {
     });
 
     sendSuccess(res, { user, accessToken }, translate('auth.login_success', req.language));
+  }
+
+  static async verifyTwoFactorLogin(req: Request, res: Response) {
+    const deviceInfo = {
+      ip: req.ip,
+      userAgent: firstHeader(req.headers['user-agent'])
+    };
+
+    const { user, accessToken, refreshToken, refreshExpiresAt } = await AuthService.verifyTwoFactorLogin(
+      req.body.twoFactorToken,
+      req.body.code,
+      deviceInfo
+    );
+
+    res.cookie('refreshToken', refreshToken, {
+      ...refreshCookieBaseOptions,
+      expires: refreshExpiresAt
+    });
+
+    sendSuccess(res, { user, accessToken }, translate('auth.login_success', req.language));
+  }
+
+  static async setupTwoFactor(req: Request, res: Response) {
+    const setup = await AuthService.setupTwoFactor(req.user!.id, req.ip, firstHeader(req.headers['user-agent']));
+    sendSuccess(res, setup, translate('auth.two_factor_setup_started', req.language));
+  }
+
+  static async enableTwoFactor(req: Request, res: Response) {
+    const user = await AuthService.enableTwoFactor(req.user!.id, req.body.code, req.ip, firstHeader(req.headers['user-agent']));
+    sendSuccess(res, user, translate('auth.two_factor_enabled', req.language));
+  }
+
+  static async disableTwoFactor(req: Request, res: Response) {
+    const user = await AuthService.disableTwoFactor(
+      req.user!.id,
+      req.body.currentPassword,
+      req.body.code,
+      req.ip,
+      firstHeader(req.headers['user-agent'])
+    );
+    sendSuccess(res, user, translate('auth.two_factor_disabled', req.language));
   }
 
   static async logout(req: Request, res: Response) {
@@ -58,10 +106,19 @@ export class AuthController {
   static async refreshToken(req: Request, res: Response) {
     const token = req.cookies.refreshToken;
     if (!token) {
+      res.clearCookie('refreshToken', refreshCookieBaseOptions);
       throw HttpError.unauthorized('auth.refresh_token_missing');
     }
 
-    const { accessToken, refreshToken, refreshExpiresAt } = await AuthService.refreshToken(token);
+    let tokens;
+    try {
+      tokens = await AuthService.refreshToken(token);
+    } catch (error) {
+      res.clearCookie('refreshToken', refreshCookieBaseOptions);
+      throw error;
+    }
+
+    const { accessToken, refreshToken, refreshExpiresAt } = tokens;
 
     res.cookie('refreshToken', refreshToken, {
       ...refreshCookieBaseOptions,

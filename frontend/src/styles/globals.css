@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --color-primary: #3b82f6;
-    --color-primary-foreground: #ffffff;
-    --color-secondary: #64748b;
-    --color-secondary-foreground: #ffffff;
-    --color-accent: #8b5cf6;
-    --color-accent-foreground: #ffffff;
-    --color-background: #ffffff;
-    --color-foreground: #0f172a;
+    --color-primary: #fdf001;
+    --color-primary-foreground: #100e22;
+    --color-secondary: #28243f;
+    --color-secondary-foreground: #fffde7;
+    --color-accent: #34d6c3;
+    --color-accent-foreground: #100e22;
+    --color-background: #100e22;
+    --color-foreground: #fffde7;
   }
 
   html {
     scroll-behavior: smooth;
+    background-color: #100e22;
   }
 
   body {
     @apply min-h-screen bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Zain', sans-serif;
   }
 
   /* Custom Scrollbar */
@@ -47,6 +51,62 @@
 
   /* Selection color */
   ::selection {
-    @apply bg-primary/20 text-primary;
+    @apply bg-primary text-primary-foreground;
   }
+}
+
+/* Shop / marketplace utilities */
+@layer utilities {
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .shop-page { font-family: 'Zain', system-ui, sans-serif; }
+  .shop-auth-page input,
+  .shop-auth-page textarea,
+  .shop-auth-page select {
+    background-color: #fff;
+    border-color: #cbd5e1;
+    color: #111827;
+  }
+  .shop-auth-page input:focus,
+  .shop-auth-page textarea:focus,
+  .shop-auth-page select:focus {
+    border-color: #100e22;
+  }
+  .shop-auth-page input::placeholder,
+  .shop-auth-page textarea::placeholder {
+    color: #6b7280;
+  }
+  .hide-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+}
+
+@keyframes tcPulse {
+  0% { transform: scale(.7); opacity: .55; }
+  70% { transform: scale(2.4); opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes tcSlideUp {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes tcFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes tcSpin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes tcShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.tc-slideup { animation: tcSlideUp .3s ease both; }
+.tc-fadein { animation: tcFadeIn .3s ease both; }
+.tc-spin { animation: tcSpin 1s linear infinite; }
+.tc-skel {
+  background: linear-gradient(90deg, #f0f0f4 25%, #e6e6ec 50%, #f0f0f4 75%);
+  background-size: 200% 100%;
+  animation: tcShimmer 1.4s linear infinite;
+  border-radius: 8px;
 }

@@ -17,8 +17,17 @@ export const validate = (schema: ZodType, target: 'body' | 'query' | 'params' = 
         return;
       }
       
-      // Overwrite the request property with the parsed data (strips unknown fields if strictly parsed)
-      req[target] = result.data as Request[typeof target];
+      // Express exposes req.query as a getter in newer versions, so direct assignment can fail.
+      if (target === 'query') {
+        Object.defineProperty(req, 'query', {
+          value: result.data,
+          configurable: true,
+          enumerable: true,
+          writable: true,
+        });
+      } else {
+        req[target] = result.data as Request[typeof target];
+      }
       next();
     } catch (error) {
       next(error);

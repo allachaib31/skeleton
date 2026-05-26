@@ -12,14 +12,14 @@ interface AlertProps {
 
 export function Alert({ variant = 'info', title, children, onDismiss, className }: AlertProps) {
   const icons = {
-    info: <Info className="h-5 w-5 text-blue-500" />,
+    info: <Info className="h-5 w-5 text-accent" />,
     success: <CheckCircle className="h-5 w-5 text-green-500" />,
     warning: <TriangleAlert className="h-5 w-5 text-yellow-500" />,
     danger: <AlertCircle className="h-5 w-5 text-red-500" />,
   };
 
   const variants = {
-    info: 'bg-blue-50 dark:bg-blue-900/10 border-blue-100 dark:border-blue-900/50 text-blue-800 dark:text-blue-400',
+    info: 'bg-accent/10 border-accent/20 text-accent',
     success: 'bg-green-50 dark:bg-green-900/10 border-green-100 dark:border-green-900/50 text-green-800 dark:text-green-400',
     warning: 'bg-yellow-50 dark:bg-yellow-900/10 border-yellow-100 dark:border-yellow-900/50 text-yellow-800 dark:text-yellow-400',
     danger: 'bg-red-50 dark:bg-red-900/10 border-red-100 dark:border-red-900/50 text-red-800 dark:text-red-400',

@@ -12,8 +12,28 @@ import {
   ChangePasswordRequest 
 } from '../types/auth.types';
 
-export const login = async (data: LoginRequest): Promise<ApiResponse<AuthResponse>> => {
+export const login = async (data: LoginRequest): Promise<ApiResponse<AuthResponse | { requiresTwoFactor: true; twoFactorToken: string }>> => {
   const response = await api.post(API_ENDPOINTS.AUTH.LOGIN, data);
+  return response.data;
+};
+
+export const verifyTwoFactorLogin = async (data: { twoFactorToken: string; code: string }): Promise<ApiResponse<AuthResponse>> => {
+  const response = await api.post(API_ENDPOINTS.AUTH.TWO_FACTOR_VERIFY_LOGIN, data);
+  return response.data;
+};
+
+export const setupTwoFactor = async (): Promise<ApiResponse<{ secret: string; otpAuthUrl: string; qrCodeDataUrl: string }>> => {
+  const response = await api.post(API_ENDPOINTS.AUTH.TWO_FACTOR_SETUP);
+  return response.data;
+};
+
+export const enableTwoFactor = async (code: string): Promise<ApiResponse<User>> => {
+  const response = await api.post(API_ENDPOINTS.AUTH.TWO_FACTOR_ENABLE, { code });
+  return response.data;
+};
+
+export const disableTwoFactor = async (data: { currentPassword: string; code: string }): Promise<ApiResponse<User>> => {
+  const response = await api.post(API_ENDPOINTS.AUTH.TWO_FACTOR_DISABLE, data);
   return response.data;
 };
 

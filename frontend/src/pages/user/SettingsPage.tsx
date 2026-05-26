@@ -5,12 +5,15 @@ import { useTranslation } from 'react-i18next';
 import { changePasswordSchema, ChangePasswordFormValues } from '../../features/auth/schemas/auth.schema';
 import { useChangePassword } from '../../features/users/hooks/useChangePassword';
 import { useDeleteAccount } from '../../features/users/hooks/useDeleteAccount';
+import { useDisableTwoFactor, useEnableTwoFactor, useSetupTwoFactor } from '../../features/auth/hooks/useTwoFactorAuth';
+import { useAuthStore } from '@/features/auth/stores/auth.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useThemeStore } from '@/app/stores/theme.store';
 import { useLanguageStore } from '@/app/stores/language.store';
 import { Card } from '@/shared/components/ui/Card';
 import { Tabs } from '@/shared/components/ui/Tabs';
 import { PasswordInput } from '@/shared/components/ui/PasswordInput';
+import { Input } from '@/shared/components/ui/Input';
 import { Button } from '@/shared/components/ui/Button';
 import { Modal } from '@/shared/components/ui/Modal';
 import { SEO } from '@/shared/components/seo/SEO';
@@ -24,8 +27,15 @@ export default function SettingsPage() {
   const { language, setLanguage } = useLanguageStore();
   const { mutate: changePass, isPending: isChanging } = useChangePassword();
   const { mutate: deleteAcc, isPending: isDeleting } = useDeleteAccount();
+  const { user } = useAuthStore();
+  const { mutate: setupTwoFactor, data: twoFactorSetup, isPending: isSettingUpTwoFactor } = useSetupTwoFactor();
+  const { mutate: enableTwoFactor, isPending: isEnablingTwoFactor } = useEnableTwoFactor();
+  const { mutate: disableTwoFactor, isPending: isDisablingTwoFactor } = useDisableTwoFactor();
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [deletePassword, setDeletePassword] = useState('');
+  const [enableTwoFactorCode, setEnableTwoFactorCode] = useState('');
+  const [disableTwoFactorCode, setDisableTwoFactorCode] = useState('');
+  const [disableTwoFactorPassword, setDisableTwoFactorPassword] = useState('');
 
   useEffect(() => {
     setPageTitle(t('settings.title'));
@@ -61,6 +71,68 @@ export default function SettingsPage() {
 
       {activeTab === 'security' && (
         <div className="space-y-8">
+          <Card padding="lg">
+            <h3 className="text-lg font-bold mb-2">{t('settings.twoFactorTitle')}</h3>
+            <p className="mb-6 text-sm text-slate-500">{t('settings.twoFactorDescription')}</p>
+
+            {user?.twoFactorEnabled ? (
+              <div className="max-w-md space-y-4">
+                <div className="rounded-lg border border-green-200 bg-green-50 p-4 text-sm font-medium text-green-700 dark:border-green-900/50 dark:bg-green-950/20 dark:text-green-300">
+                  {t('settings.twoFactorEnabledStatus')}
+                </div>
+                <PasswordInput
+                  label={t('runtime.currentPassword')}
+                  value={disableTwoFactorPassword}
+                  onChange={(event: any) => setDisableTwoFactorPassword(event.target.value)}
+                />
+                <Input
+                  label={t('settings.twoFactorCode')}
+                  inputMode="numeric"
+                  maxLength={6}
+                  value={disableTwoFactorCode}
+                  onChange={(event) => setDisableTwoFactorCode(event.target.value.replace(/\D/g, '').slice(0, 6))}
+                />
+                <Button
+                  variant="danger"
+                  isLoading={isDisablingTwoFactor}
+                  disabled={!disableTwoFactorPassword || disableTwoFactorCode.length !== 6}
+                  onClick={() => disableTwoFactor({ currentPassword: disableTwoFactorPassword, code: disableTwoFactorCode })}
+                >
+                  {t('settings.disableTwoFactor')}
+                </Button>
+              </div>
+            ) : (
+              <div className="max-w-md space-y-4">
+                {!twoFactorSetup?.data ? (
+                  <Button onClick={() => setupTwoFactor()} isLoading={isSettingUpTwoFactor}>
+                    {t('settings.setupTwoFactor')}
+                  </Button>
+                ) : (
+                  <>
+                    <div className="rounded-lg border border-slate-200 p-4 dark:border-slate-800">
+                      <img src={twoFactorSetup.data.qrCodeDataUrl} alt={t('settings.twoFactorQrAlt')} className="mx-auto h-48 w-48 rounded bg-white p-2" />
+                      <div className="mt-4 break-all text-center text-sm text-slate-500">{twoFactorSetup.data.secret}</div>
+                    </div>
+                    <Input
+                      label={t('settings.twoFactorCode')}
+                      inputMode="numeric"
+                      maxLength={6}
+                      value={enableTwoFactorCode}
+                      onChange={(event) => setEnableTwoFactorCode(event.target.value.replace(/\D/g, '').slice(0, 6))}
+                    />
+                    <Button
+                      isLoading={isEnablingTwoFactor}
+                      disabled={enableTwoFactorCode.length !== 6}
+                      onClick={() => enableTwoFactor(enableTwoFactorCode)}
+                    >
+                      {t('settings.enableTwoFactor')}
+                    </Button>
+                  </>
+                )}
+              </div>
+            )}
+          </Card>
+
           <Card padding="lg">
             <h3 className="text-lg font-bold mb-6">{t('runtime.changePassword')}</h3>
             <form onSubmit={handleSubmit(onSubmitPassword)} className="max-w-md space-y-6">

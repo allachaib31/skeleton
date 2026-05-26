@@ -5,6 +5,19 @@ import type { ApiResponse } from './api.types';
 
 export type ApiContractPath =
   | '/admin/audit-logs'
+  | '/admin/clients'
+  | '/admin/clients/financial-movements'
+  | '/admin/clients/special-prices'
+  | '/admin/clients/special-prices/bulk-delete'
+  | '/admin/clients/special-prices/{specialPriceId}'
+  | '/admin/clients/{id}'
+  | '/admin/clients/{id}/levels'
+  | '/admin/clients/{id}/levels/generate'
+  | '/admin/clients/{id}/levels/{levelId}'
+  | '/admin/clients/{id}/movements'
+  | '/admin/clients/{id}/open-credit'
+  | '/admin/clients/{id}/special-prices'
+  | '/admin/clients/{id}/special-prices/bulk-delete'
   | '/admin/dashboard'
   | '/admin/languages'
   | '/admin/languages/template'
@@ -13,6 +26,45 @@ export type ApiContractPath =
   | '/admin/roles/{id}'
   | '/admin/sessions'
   | '/admin/sessions/{id}'
+  | '/admin/settings/apis'
+  | '/admin/settings/apis/gift-card-providers-2/simulate'
+  | '/admin/settings/apis/gift-card-providers/simulate'
+  | '/admin/settings/apis/social-media-service-providers/simulate'
+  | '/admin/settings/apis/sync-all'
+  | '/admin/settings/apis/temporary-number-coding-sites/simulate'
+  | '/admin/settings/apis/{id}'
+  | '/admin/settings/apis/{id}/sync'
+  | '/admin/settings/currencies'
+  | '/admin/settings/currencies/{id}'
+  | '/admin/settings/payment-codes'
+  | '/admin/settings/payment-codes/journal'
+  | '/admin/settings/payment-codes/{id}'
+  | '/admin/settings/payment-gateways'
+  | '/admin/settings/payment-gateways/{id}'
+  | '/admin/settings/pricing-simulation/calculate'
+  | '/admin/stocks/categories'
+  | '/admin/stocks/categories/{id}'
+  | '/admin/stocks/product-groups'
+  | '/admin/stocks/product-requirements'
+  | '/admin/stocks/product-requirements/{id}'
+  | '/admin/stocks/products'
+  | '/admin/stocks/products/import'
+  | '/admin/stocks/products/import/preview'
+  | '/admin/stocks/products/{id}'
+  | '/admin/stocks/products/{id}/api-connections'
+  | '/admin/stocks/products/{id}/api-connections/{connectionId}'
+  | '/admin/stocks/products/{id}/api-connections/{connectionId}/activate'
+  | '/admin/stocks/promotions'
+  | '/admin/stocks/promotions/usages'
+  | '/admin/stocks/promotions/{id}'
+  | '/admin/stocks/service-groups'
+  | '/admin/stocks/service-groups/{id}'
+  | '/admin/stocks/services'
+  | '/admin/stocks/services/{id}'
+  | '/admin/stocks/warehouses'
+  | '/admin/stocks/warehouses/items'
+  | '/admin/stocks/warehouses/items/import'
+  | '/admin/stocks/warehouses/{id}'
   | '/admin/system/health'
   | '/admin/system/metrics'
   | '/admin/uploads'
@@ -21,6 +73,10 @@ export type ApiContractPath =
   | '/admin/users/{id}'
   | '/admin/users/{id}/roles'
   | '/admin/users/{id}/status'
+  | '/auth/2fa/disable'
+  | '/auth/2fa/enable'
+  | '/auth/2fa/setup'
+  | '/auth/2fa/verify-login'
   | '/auth/change-password'
   | '/auth/forgot-password'
   | '/auth/login'
@@ -37,6 +93,8 @@ export type ApiContractPath =
   | '/notifications/unread-count'
   | '/notifications/{id}'
   | '/notifications/{id}/read'
+  | '/payment-codes/redeem'
+  | '/settings/app'
   | '/uploads'
   | '/uploads/avatar'
   | '/uploads/{id}'
@@ -48,6 +106,19 @@ export type ApiContractPath =
 
 export const apiContractPaths = [
   "/admin/audit-logs",
+  "/admin/clients",
+  "/admin/clients/financial-movements",
+  "/admin/clients/special-prices",
+  "/admin/clients/special-prices/bulk-delete",
+  "/admin/clients/special-prices/{specialPriceId}",
+  "/admin/clients/{id}",
+  "/admin/clients/{id}/levels",
+  "/admin/clients/{id}/levels/generate",
+  "/admin/clients/{id}/levels/{levelId}",
+  "/admin/clients/{id}/movements",
+  "/admin/clients/{id}/open-credit",
+  "/admin/clients/{id}/special-prices",
+  "/admin/clients/{id}/special-prices/bulk-delete",
   "/admin/dashboard",
   "/admin/languages",
   "/admin/languages/template",
@@ -56,6 +127,45 @@ export const apiContractPaths = [
   "/admin/roles/{id}",
   "/admin/sessions",
   "/admin/sessions/{id}",
+  "/admin/settings/apis",
+  "/admin/settings/apis/gift-card-providers-2/simulate",
+  "/admin/settings/apis/gift-card-providers/simulate",
+  "/admin/settings/apis/social-media-service-providers/simulate",
+  "/admin/settings/apis/sync-all",
+  "/admin/settings/apis/temporary-number-coding-sites/simulate",
+  "/admin/settings/apis/{id}",
+  "/admin/settings/apis/{id}/sync",
+  "/admin/settings/currencies",
+  "/admin/settings/currencies/{id}",
+  "/admin/settings/payment-codes",
+  "/admin/settings/payment-codes/journal",
+  "/admin/settings/payment-codes/{id}",
+  "/admin/settings/payment-gateways",
+  "/admin/settings/payment-gateways/{id}",
+  "/admin/settings/pricing-simulation/calculate",
+  "/admin/stocks/categories",
+  "/admin/stocks/categories/{id}",
+  "/admin/stocks/product-groups",
+  "/admin/stocks/product-requirements",
+  "/admin/stocks/product-requirements/{id}",
+  "/admin/stocks/products",
+  "/admin/stocks/products/import",
+  "/admin/stocks/products/import/preview",
+  "/admin/stocks/products/{id}",
+  "/admin/stocks/products/{id}/api-connections",
+  "/admin/stocks/products/{id}/api-connections/{connectionId}",
+  "/admin/stocks/products/{id}/api-connections/{connectionId}/activate",
+  "/admin/stocks/promotions",
+  "/admin/stocks/promotions/usages",
+  "/admin/stocks/promotions/{id}",
+  "/admin/stocks/service-groups",
+  "/admin/stocks/service-groups/{id}",
+  "/admin/stocks/services",
+  "/admin/stocks/services/{id}",
+  "/admin/stocks/warehouses",
+  "/admin/stocks/warehouses/items",
+  "/admin/stocks/warehouses/items/import",
+  "/admin/stocks/warehouses/{id}",
   "/admin/system/health",
   "/admin/system/metrics",
   "/admin/uploads",
@@ -64,6 +174,10 @@ export const apiContractPaths = [
   "/admin/users/{id}",
   "/admin/users/{id}/roles",
   "/admin/users/{id}/status",
+  "/auth/2fa/disable",
+  "/auth/2fa/enable",
+  "/auth/2fa/setup",
+  "/auth/2fa/verify-login",
   "/auth/change-password",
   "/auth/forgot-password",
   "/auth/login",
@@ -80,6 +194,8 @@ export const apiContractPaths = [
   "/notifications/unread-count",
   "/notifications/{id}",
   "/notifications/{id}/read",
+  "/payment-codes/redeem",
+  "/settings/app",
   "/uploads",
   "/uploads/avatar",
   "/uploads/{id}",

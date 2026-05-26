@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
-import type { Notification } from '../api/notifications.api';
+import { normalizeNotification, type Notification } from '../api/notifications.api';
 
 interface NotificationState {
   unreadCount: number;
@@ -25,19 +25,28 @@ export const useNotificationStore = create<NotificationState & NotificationActio
       notifications: [],
 
       setUnreadCount: (unreadCount) => set({ unreadCount }),
-      setNotifications: (notifications) =>
+      setNotifications: (notifications) => {
+        const normalizedNotifications = notifications.map((notification) => normalizeNotification(notification as any));
         set({
-          notifications,
-          unreadCount: notifications.filter((notification) => !notification.read).length,
-        }),
+          notifications: normalizedNotifications,
+          unreadCount: normalizedNotifications.filter((notification) => !notification.read).length,
+        });
+      },
       incrementUnreadCount: () => set((state) => ({ unreadCount: state.unreadCount + 1 })),
       decrementUnreadCount: () =>
         set((state) => ({ unreadCount: Math.max(0, state.unreadCount - 1) })),
       addNotification: (notification) =>
-        set((state) => ({
-          notifications: [notification, ...state.notifications].slice(0, 10),
-          unreadCount: state.unreadCount + (notification.read ? 0 : 1),
-        })),
+        set((state) => {
+          const normalizedNotification = normalizeNotification(notification as any);
+          const notifications = [
+            normalizedNotification,
+            ...state.notifications.filter((item) => item._id !== normalizedNotification._id),
+          ].slice(0, 10);
+          return {
+            notifications,
+            unreadCount: state.unreadCount + (normalizedNotification.read ? 0 : 1),
+          };
+        }),
       markAsRead: (id) =>
         set((state) => ({
           notifications: state.notifications.map((n) =>

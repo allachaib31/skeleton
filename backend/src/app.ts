@@ -44,9 +44,9 @@ app.use(cors(corsOptions));
 // Rate limiting
 app.use(globalLimit);
 
-// Parse JSON and URLEncoded payloads
-app.use(express.json({ limit: '10kb' }));
-app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+// Parse JSON and URLEncoded payloads. Bulk API imports can include thousands of provider IDs.
+app.use(express.json({ limit: '1mb' }));
+app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 app.use(cookieParser(env.COOKIE_SECRET));
 
 // Data sanitization against NoSQL query injection
@@ -79,12 +79,53 @@ import adminRoutes from './modules/admin/admin.routes';
 import uploadsRoutes from './modules/uploads/upload.routes';
 import notificationsRoutes from './modules/notifications/notifications.routes';
 import i18nRoutes from './modules/i18n/i18n.routes';
+import stockServiceRoutes from './modules/stock-services/stock-service.routes';
+import stockServiceGroupRoutes from './modules/stock-service-groups/stock-service-group.routes';
+import stockCategoryRoutes from './modules/stock-categories/stock-category.routes';
+import stockProductRoutes from './modules/stock-products/stock-product.routes';
+import stockProductRequirementRoutes from './modules/stock-product-requirements/stock-product-requirement.routes';
+import stockProductGroupRoutes from './modules/stock-product-groups/stock-product-group.routes';
+import stockWarehouseRoutes from './modules/stock-warehouses/stock-warehouse.routes';
+import stockPromotionRoutes from './modules/stock-promotions/stock-promotion.routes';
+import settingsCurrencyRoutes from './modules/settings-currencies/settings-currency.routes';
+import settingsAppRoutes from './modules/settings-app/settings-app.routes';
+import settingsApiRoutes from './modules/settings-apis/settings-api.routes';
+import settingsPaymentGatewayRoutes from './modules/settings-payment-gateways/settings-payment-gateway.routes';
+import adminClientRoutes from './modules/admin-clients/admin-client.routes';
+import paymentCodeRoutes, { adminPaymentCodeRoutes } from './modules/payment-codes/payment-code.routes';
+import { paymentRequestRoutes, adminPaymentRequestRoutes } from './modules/payment-requests/payment-request.routes';
+import pricingSimulationRoutes from './modules/pricing/pricing-simulation.routes';
+import orderRoutes from './modules/orders/order.routes';
+import shopRoutes from './modules/shop/shop.routes';
+import { adminProblemReportRoutes, problemReportRoutes } from './modules/problem-reports/problem-report.routes';
 
 app.use(`${env.API_PREFIX}/auth`, authRoutes);
 app.use(`${env.API_PREFIX}/users`, usersRoutes);
 app.use(`${env.API_PREFIX}/admin/roles`, rolesRoutes);
 app.use(`${env.API_PREFIX}/admin/permissions`, permissionsRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/services`, stockServiceRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/service-groups`, stockServiceGroupRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/categories`, stockCategoryRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/product-requirements`, stockProductRequirementRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/product-groups`, stockProductGroupRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/warehouses`, stockWarehouseRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/promotions`, stockPromotionRoutes);
+app.use(`${env.API_PREFIX}/admin/stocks/products`, stockProductRoutes);
+app.use(`${env.API_PREFIX}/settings/app`, settingsAppRoutes);
+app.use(`${env.API_PREFIX}/admin/settings/currencies`, settingsCurrencyRoutes);
+app.use(`${env.API_PREFIX}/admin/settings/apis`, settingsApiRoutes);
+app.use(`${env.API_PREFIX}/admin/settings/payment-gateways`, settingsPaymentGatewayRoutes);
+app.use(`${env.API_PREFIX}/admin/settings/payment-codes`, adminPaymentCodeRoutes);
+app.use(`${env.API_PREFIX}/admin/payments`, adminPaymentRequestRoutes);
+app.use(`${env.API_PREFIX}/admin/settings/pricing-simulation`, pricingSimulationRoutes);
+app.use(`${env.API_PREFIX}/admin/clients`, adminClientRoutes);
+app.use(`${env.API_PREFIX}/admin/orders`, orderRoutes);
+app.use(`${env.API_PREFIX}/admin/problem-reports`, adminProblemReportRoutes);
 app.use(`${env.API_PREFIX}/admin`, adminRoutes);
+app.use(`${env.API_PREFIX}/payment-codes`, paymentCodeRoutes);
+app.use(`${env.API_PREFIX}/payments`, paymentRequestRoutes);
+app.use(`${env.API_PREFIX}/problem-reports`, problemReportRoutes);
+app.use(`${env.API_PREFIX}/shop`, shopRoutes);
 app.use(`${env.API_PREFIX}/uploads`, uploadsRoutes);
 app.use(`${env.API_PREFIX}/notifications`, notificationsRoutes);
 app.use(`${env.API_PREFIX}/i18n`, i18nRoutes);

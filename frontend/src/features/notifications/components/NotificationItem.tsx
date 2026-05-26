@@ -1,4 +1,5 @@
 import { Notification } from '../api/notifications.api';
+import { useTranslation } from 'react-i18next';
 import { Card } from '@/shared/components/ui/Card';
 import { formatRelative } from '@/shared/lib/utils/date';
 import { useLanguageStore } from '@/app/stores/language.store';
@@ -13,45 +14,48 @@ interface NotificationItemProps {
 }
 
 export function NotificationItem({ notification, onRead, onDelete, compact }: NotificationItemProps) {
+  const { t } = useTranslation();
   const { language } = useLanguageStore();
   const { _id, title, message, type, read, createdAt } = notification;
+  const displayTitle = notification.data?.titleKey ? t(notification.data.titleKey) : title;
+  const displayMessage = notification.data?.messageKey ? t(notification.data.messageKey) : message;
 
   const getIcon = () => {
     switch (type) {
       case 'SUCCESS': return <CheckCircle size={18} className="text-green-500" />;
       case 'WARNING': return <AlertTriangle size={18} className="text-yellow-500" />;
       case 'DANGER': return <Trash2 size={18} className="text-red-500" />;
-      default: return <Info size={18} className="text-blue-500" />;
+      default: return <Info size={18} className="text-accent" />;
     }
   };
 
   return (
     <Card 
       className={cn(
-        "flex items-start gap-4 p-4 transition-colors cursor-pointer group",
-        !read ? "bg-primary/5 dark:bg-primary/10 border-l-4 border-l-primary" : "hover:bg-slate-50 dark:hover:bg-slate-900/50",
-        compact && "p-3 gap-3 border-none shadow-none rounded-none hover:bg-slate-50 dark:hover:bg-slate-900/50"
+        "flex min-w-0 max-w-full items-start gap-4 overflow-hidden p-4 transition-colors cursor-pointer group",
+        !read ? "bg-primary/5 dark:bg-primary/10 border-l-4 border-l-primary rtl:border-l-0 rtl:border-r-4 rtl:border-r-primary" : "hover:bg-slate-50 dark:hover:bg-slate-900/50",
+        compact && "p-3 gap-2 border-none shadow-none rounded-none hover:bg-slate-50 dark:hover:bg-slate-900/50"
       )}
       onClick={() => onRead?.(_id)}
     >
-      <div className="shrink-0 mt-1">
+      <div className="mt-1 shrink-0">
         {getIcon()}
       </div>
       
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center justify-between gap-2 mb-1">
-          <h4 className={cn("text-sm truncate", !read ? "font-bold" : "font-medium")}>
-            {title}
+      <div className="min-w-0 flex-1 overflow-hidden">
+        <div className="mb-1 flex min-w-0 flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
+          <h4 className={cn("min-w-0 max-w-full text-sm break-words [overflow-wrap:anywhere]", !read ? "font-bold" : "font-medium")}>
+            {displayTitle}
           </h4>
-          <span className="text-[10px] text-slate-400 whitespace-nowrap">
+          <span className="shrink-0 text-[10px] text-slate-400 sm:max-w-[96px] sm:text-end">
             {formatRelative(createdAt, language)}
           </span>
         </div>
         <p className={cn(
-          "text-xs text-slate-500 dark:text-slate-400 leading-relaxed",
-          compact ? "line-clamp-1" : "line-clamp-2"
+          "max-w-full text-xs text-slate-500 dark:text-slate-400 leading-relaxed break-words [overflow-wrap:anywhere]",
+          compact ? "line-clamp-2" : "line-clamp-3"
         )}>
-          {message}
+          {displayMessage}
         </p>
       </div>
 

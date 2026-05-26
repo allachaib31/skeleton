@@ -1,6 +1,6 @@
-# AppName - Professional React Frontend Skeleton
+# tafa3olcard Frontend
 
-An enterprise-grade React + Vite + TypeScript foundation for building scalable SaaS applications.
+React + Vite + TypeScript frontend for tafa3olcard.
 
 ## ✨ Features
 
@@ -35,7 +35,7 @@ npm install
 Copy `.env.example` to `.env` and fill in the values:
 | Variable | Description | Default |
 |----------|-------------|---------|
-| VITE_APP_NAME | Application Title | AppName |
+| VITE_APP_NAME | Application Title | tafa3olcard |
 | VITE_API_URL | Backend API URL | http://localhost:5000/api/v1 |
 | VITE_SOCKET_URL | Socket.IO Server URL | http://localhost:5000 |
 
@@ -64,4 +64,4 @@ npm run build
 - **Admin**: `/admin/dashboard`, `/admin/users`, `/admin/roles`, `/admin/audit-logs`
 
 ---
-Built with ❤️ by the Antigravity Team.
+Built for tafa3olcard.
